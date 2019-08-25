@@ -1,0 +1,20 @@
+#whyUs{
+    background-color: $sidBlu;
+    position: relative;
+    height: 9rem;
+    overflow: hidden;
+    z-index:-2;
+    margin-bottom:5rem;
+    &:after{
+        content:"";
+        position: absolute;
+        top:0;
+        right: -6rem;
+        width:70%;
+        height: 100%;
+        padding: 2rem;
+        background-color: $mainOra;
+        transform: skew(50deg);
+        z-index:-1;
+    }
+}
