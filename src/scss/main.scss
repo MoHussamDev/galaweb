@@ -1,0 +1,81 @@
+// This is the single file output by sass. It is intended to ONLY @import other files.
+@import './tools/fonts';
+
+@import './tools/normalize';
+
+@import './tools/vars';
+
+@import './tools/mainSite';
+
+@import './tools/breakPoints';
+
+
+// _
+
+@import './galaxy/header';
+@import './galaxy/hotTravelDeals.scss';
+
+.container-fluid{
+    padding:0 !important;
+}
+
+section{
+    padding-top:2rem !important;
+    #upperTitleGala{
+        padding-left:6rem;
+        display:flex;
+        width:100%;
+        align-items:flex-end;
+        position: relative;
+        margin-bottom:3rem;    
+        .titleGala{
+            width:85%;
+            height:inherit;
+            h1{
+                font-weight:400;
+                color:$sidBlu;
+                text-transform: uppercase;
+                font-size:2.5rem;
+                letter-spacing: -0.5px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+                span{
+                    font-weight:600;
+                    padding-left:0.8rem;
+                    color: $mainOra;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    letter-spacing: 2px;
+                }
+            }
+            &:before{
+                content:'';
+                background:url('../../assets/img/iconz/galaxiaTours.svg');
+                background-size:cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top:0.5rem;
+                left:-1rem;
+                padding:3rem;
+            }
+        }
+        .seeMoreGala{
+            height:inherit;
+            width:15%;
+            font-weight: 500;
+            a{
+                cursor: pointer;
+                color:$mainOra;
+                &:before{
+                    content:"\f00e";
+                    font: normal normal normal 20px/1 FontAwesome;
+                    padding-right:0.5rem;
+                    position: relative;
+                    top:0.3rem;
+                }
+            }
+
+        }
+    }
+}
