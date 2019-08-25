@@ -14,34 +14,148 @@
             display:flex;
             align-items:center;  
             padding-left:1rem;
-            .swiper-wrapper{
-                
+            .swiper-wrapper{ 
                 height:80%;
                 
                 .swiper-slide{
-                    width:244.42px;
+                    // width:244.42px !important;
                     height:auto;
+                    margin:0; 
+                    &:hover{
+                        z-index:1000000;
+                    }
                     #hotTravelPackagesCard{
                         background-color: white;
                         height: 338.67px;
                         border-radius:10px;
-                        transition: all .8s;
+                        transition: all .5s;
                         width:244.42px;
                         box-shadow:$materialShadow;
                         overflow:hidden;
+                        cursor:pointer;
                         &:hover{
-                            transform:scale3d(1.2,1.2,1.2);
-                            z-indeX:100000;
-                            box-shadow:$materialShadowHover;
+                            // transform:scale3d(1.2,1.2,1.2);
+                            box-shadow:$materialShadowHover; 
+                            backface-visibility: hidden;
+                            height:450px;
+                            width:300px;
+                            .upperCardPackage{
+                                
+                                &:before{
+
+                                    background-color: $packageOverlayHover;
+                                }
+                                p{
+                                    opacity:1;
+                                    bottom:0;
+                                }
+                            }
                             
                         }
                         .upperCardPackage{
-                            height: 60%;
-                            img{
+                            height: 65%;
+                            background-size:cover;
+                            background-position:center;
+                            position:relative;
+                            z-index:0;
+                            display:flex;
+                            padding-left:2rem;
+                            padding-top:1rem;
+                            overflow:hidden;
+                            &:before{
+                                content:'';
+                                position:absolute;
+                                top:0;
+                                left:0;
                                 height:100%;
+                                background-color: $packageOverlay;
                                 width:100%;
+                                padding:5rem;
+                                transition:all 0.5s;
+                                z-index:-1;
                             }
+                            p{
+                                color: white;
+                                font-size:1.3rem;
+                                width:70%;
+                                font-weight:600;
+                                opacity: 0;
+                                position: relative;
+                                bottom:-100%;
+                                background-color: $overlay;
+                                height: 105%;
+                                transition: all 0.5s ease;
+
+                            }
+
                         }
+                        .downCardPackage{
+                            transition: all .7s;
+                            padding-left:1rem;
+                            padding-right:1rem;
+                            height: 35%;
+                            .dataOfPackage{
+                                height:50%;
+                                display:flex;
+                                flex-direction:column;
+                                align-items:flex-start;
+                                justify-content: flex-end;
+                                span{
+                                    padding-left:0.5rem;
+                                    color: $mainOra;
+                                    &:before{
+                                        content:'\f041';
+                                        font: normal normal normal 14px/1 FontAwesome;
+                                        position: relative;
+                                        left:-0.5rem;
+                                        color:$mainBlu;
+                                    }
+                                }
+                                h1{
+                                    margin:0;
+                                    padding:0;
+                                    -webkit-font-smoothing: antialiased;
+                                    font-weight:400;
+                                    font-size:1.8rem;
+                                }
+
+                            }
+                            .priceAndButton{
+                                height:50%;
+                                display:flex;
+                                .price{
+                                    height: 100%;
+                                    display: flex;
+                                    align-items:center;
+                                    width:50%;
+                                    justify-content: flex-start;
+                                    span{
+                                        font-size:2.5rem;
+                                        font-weight:600;
+                                        color: $mainOra;
+                                    }
+                                }
+                                .btnCardPackage{
+                                    height: 100%;
+                                    display: flex;
+                                    align-items:center;
+                                    width:50%;
+                                    justify-content: flex-end; 
+                                    a{
+                                        text-decoration:none;
+                                        background-color: $buttonColor;
+                                        color: white;
+                                        width:9rem;
+                                        height:3rem;
+                                        font-weight: 600;
+                                        font-size:1.2rem;
+                                        display:flex;
+                                        align-items:center;
+                                        justify-content:center;
+                                        border-radius:1px;
+                                    }
+                                }
+                            }
                     }
                     
                 }
@@ -49,3 +163,4 @@
             }
         }
     }
+}

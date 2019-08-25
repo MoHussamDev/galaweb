@@ -1,4 +1,5 @@
 include ../../commons/topSection
+include partials/card
 section#hotTravelPackage
     .container
         +mii('Hot Travel','Packages')
@@ -6,14 +7,15 @@ section#hotTravelPackage
         .HotTravelPackagesCards
             .swiper-wrapper
                 .swiper-slide 
-                        include partials/card
+                        +packageCard('Cairo And Xmas Cruise','Egypt',"500$","tour1")
                 .swiper-slide 
-                        include partials/card
+                        +packageCard('Cairo And Xmas Cruise','Egypt',"500$","tour2")
+                       
                 .swiper-slide 
-                        include partials/card
+                        +packageCard('Cairo And Xmas Cruise','Egypt',"500$","tour3")
                 .swiper-slide 
-                        include partials/card
+                        +packageCard('Cairo And Xmas Cruise','Egypt',"500$","tour4")
                 .swiper-slide 
-                        include partials/card
+                        +packageCard('Cairo And Xmas Cruise','Egypt',"500$","tour5")
                 .swiper-slide 
-                        include partials/card
+                        +packageCard('Cairo And Xmas Cruise','Egypt',"500$","tour6")
