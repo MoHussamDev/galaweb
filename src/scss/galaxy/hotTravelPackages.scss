@@ -1,4 +1,51 @@
 #hotTravelPackage{
     padding-top:10rem !important;
     background-color: white;
-}
+    padding-bottom:5rem;
+    .CardContainerGala{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        .HotTravelPackagesCards{
+            margin-left:1rem;
+            width: 85%;
+            overflow: hidden;
+            height:60rem;  
+            display:flex;
+            align-items:center;  
+            padding-left:1rem;
+            .swiper-wrapper{
+                
+                height:80%;
+                
+                .swiper-slide{
+                    width:244.42px;
+                    height:auto;
+                    #hotTravelPackagesCard{
+                        background-color: white;
+                        height: 338.67px;
+                        border-radius:10px;
+                        transition: all .8s;
+                        width:244.42px;
+                        box-shadow:$materialShadow;
+                        overflow:hidden;
+                        &:hover{
+                            transform:scale3d(1.2,1.2,1.2);
+                            z-indeX:100000;
+                            box-shadow:$materialShadowHover;
+                            
+                        }
+                        .upperCardPackage{
+                            height: 60%;
+                            img{
+                                height:100%;
+                                width:100%;
+                            }
+                        }
+                    }
+                    
+                }
+                }
+            }
+        }
+    }
