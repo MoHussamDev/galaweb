@@ -45,7 +45,7 @@
                 text-transform:uppercase;
                 font-size:1.5rem;
                 letter-spacing:2px;
-                
+                font-style: italic;
             }
             h2{
                 margin:0;
@@ -56,6 +56,7 @@
                 align-self:flex-end;
                 position: relative;
                 right:10rem;
+                font-style: italic;
                 span{
                     font-weight:600;
                     color: $mainOra;
