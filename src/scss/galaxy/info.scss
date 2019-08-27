@@ -1,3 +1,74 @@
 #infoGala{
     background-color: $whiteDark;
+    .infoSectionGala{
+        height:40rem;
+        display:flex;
+        align-items:center;
+        justify-content:center;    
+        width:100%;
+        .parts{
+            height:80%;
+            width:90%;
+            display:flex;
+            flex-wrap:wrap;
+            .part{
+                width:50%;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                .cardInoGala{
+                    width:90%;
+                    background-color: white;
+                    height:55%;
+                    box-shadow:$cardShadow;
+                    .innderCard{
+                        height:100%;
+                        width:100%;
+                        display:flex;
+                        .image{
+                            height:100%;
+                            width:20%;
+                            display:flex;
+                            align-items:center;
+                            justify-content:center;
+                        }
+                        .dataCard{
+                            transform:scale(0.9) translateX(-3rem);
+                            width:80%;
+                            display:flex;
+                            align-items:center;
+
+                            .inCardGala{
+                                height:80%;
+                                width:100%;
+                                display:flex;
+                                flex-direction:column;
+                                justify-content:center;
+                                h2{
+                                    padding:0;
+                                    margin:0;
+                                    font-size:1.8rem;
+                                    padding-bottom:0.2rem;
+                                    text-transform:uppercase;
+                                    color: #005187;
+                                }
+                                p{
+                                    padding:0;
+                                    margin:0;
+                                    font-size:1rem;
+                                    width:90%;    
+                                    font-weight:500;
+                                    color: #005187;
+                                }
+                                
+                            }
+
+
+                        }
+                    }
+                }
+            }
+
+        }
+    } 
 }
