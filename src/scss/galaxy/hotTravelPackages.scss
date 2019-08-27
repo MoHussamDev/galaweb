@@ -29,7 +29,7 @@
                         background-color: white;
                         height: 338.67px;
                         border-radius:10px;
-                        transition: all .5s;
+                        transition: all .3s;
                         width:100%;
                         box-shadow:$materialShadow;
                         transform-origin: 50% 50%;
@@ -39,7 +39,7 @@
                             transform: translateX(-20px);
                             box-shadow:$materialShadowHover; 
                             backface-visibility: hidden;
-                            height:450px;
+                            height:400px;
                             width:300px;
                           
                             .upperCardPackage{
