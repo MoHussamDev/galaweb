@@ -1,26 +1,27 @@
 #hotTravelPackage{
-    padding-top:10rem !important;
-    background-color: white;
-    padding-bottom:5rem;
+    // padding-top:10rem !important;
+    background-color: $whiteDark;
     .CardContainerGala{
         width:100%;
         display:flex;
         justify-content: center;
         .HotTravelPackagesCards{
-            margin-left:1rem;
-            width: 85%;
-            overflow: hidden;
-            height:60rem;  
+            width: 100%;
+            height:46rem;  
             display:flex;
             align-items:center;  
             padding-left:1rem;
-            .swiper-wrapper{ 
+            .swiper-wrappers{ 
                 height:80%;
-                
-                .swiper-slide{
-                    // width:244.42px !important;
+                display:flex;
+                width:100%;
+                justify-content:space-between;
+                .swiper-slidef{
+                   position: relative;
                     height:auto;
-                    margin:0; 
+                    width:23%;
+                   
+                    
                     &:hover{
                         z-index:1000000;
                     }
@@ -29,16 +30,18 @@
                         height: 338.67px;
                         border-radius:10px;
                         transition: all .5s;
-                        width:244.42px;
+                        width:100%;
                         box-shadow:$materialShadow;
-                        overflow:hidden;
+                        transform-origin: 50% 50%;
                         cursor:pointer;
                         &:hover{
-                            // transform:scale3d(1.2,1.2,1.2);
+                            position:absolute;
+                            transform: translateX(-20px);
                             box-shadow:$materialShadowHover; 
                             backface-visibility: hidden;
                             height:450px;
                             width:300px;
+                          
                             .upperCardPackage{
                                 
                                 &:before{

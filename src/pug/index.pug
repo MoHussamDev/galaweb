@@ -15,10 +15,22 @@ html(lang="en")
         block content 
             include sections/nav    
             include sections/header/header
-            include sections/hotTravelDeals/index    
+            include sections/banner/index
+            include sections/hotTravelDeals/index
+              
+            .container-fluid
+                .container
+                    .row
+                        .col-md-8
+                             include sections/slideOra/index  
+                        .col-md-4 
+                             include sections/rightBanner/index     
+            .container 
+                hr  
+            //- include sections/topDestinations/index                         
+            include sections/hotTravelPackage/index
+            include sections/parralax/index    
             include sections/whyUs/index    
-            include sections/hotTravelPackage/index    
-            include sections/topDestinations/index    
             include sections/footer/footer
         block scripts 
             include  mains/scripts 

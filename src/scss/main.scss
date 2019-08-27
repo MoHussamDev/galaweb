@@ -13,10 +13,13 @@
 // _
 
 @import './galaxy/header';
+@import './galaxy/banner.scss';
 @import './galaxy/hotTravelDeals.scss';
+@import './galaxy/sliderOra.scss';
 @import './galaxy/whyUs.scss';
 @import './galaxy/hotTravelPackages.scss';
 @import './galaxy/topDestinations.scss';
+@import './galaxy/parralaxAccumar.scss';
 @import './galaxy/footer.scss';
 
 
@@ -24,19 +27,28 @@
     padding:0 !important;
 }
 
+hr{
+    margin-top:7rem;
+}
 section{
     padding-top:2rem !important;
     #upperTitleGala{
-        padding-left:6rem;
+        
+        
         display:flex;
+        flex-wrap:wrap;
         width:100%;
-        align-items:flex-end;
+        align-items:center;
         position: relative;
         margin-bottom:3rem;    
         .titleGala{
             width:85%;
             height:inherit;
-            h1{
+            h1{ 
+                position:relative;
+                left:2rem;
+                display:inline-block;
+                transform:scale(0.8);
                 font-weight:400;
                 color:$sidBlu;
                 text-transform: uppercase;
@@ -56,22 +68,36 @@ section{
             }
             &:before{
                 content:'';
+                
                 background:url('../../assets/img/iconz/galaxiaTours.svg');
                 background-size:cover;
                 background-repeat: no-repeat;
                 position: absolute;
-                top:0.5rem;
+                top:1.5rem;
                 left:-1rem;
-                padding:3rem;
+                padding:2rem;
             }
         }
         .seeMoreGala{
+            transform: scale(0.8);
+            transform-origin: 50% 50%;
             height:inherit;
             width:15%;
             font-weight: 500;
+            background-color: $mainOra;
+
             a{
                 cursor: pointer;
-                color:$mainOra;
+                color:white;
+                font-weight:600;
+                
+                width:17rem;
+                height:4rem;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                border-radius:3px;
+        
                 &:before{
                     content:"\f00e";
                     font: normal normal normal 20px/1 FontAwesome;
@@ -81,6 +107,24 @@ section{
                 }
             }
 
+        }
+        .description{
+            width:100%;
+            align-self:flex-start;
+            display:flex;
+            justify-content:flex-start;
+
+            h2{
+
+                text-transform: capitalize;
+                font-size:1.2rem;
+                color:  $mainFooterColor;;
+                display: inline-block;
+                padding:0;
+                margin:0;
+                font-weight:600;
+
+            }
         }
     }
 }

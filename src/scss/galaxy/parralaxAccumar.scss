@@ -1,0 +1,112 @@
+#parralaxAccumark{
+    background-image:url('/assets/img/foloImage/acmark.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:518px;
+    position: relative;
+    z-index:0;
+
+    &:before{
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        background-color: $parralaxHover;
+        z-index:-1;
+    }
+    .innerDataParralax{
+        display:flex;
+        align-items:center;
+        height:518px;
+        
+        display:flex;
+        width:100%;
+        .dataPara{
+            height: 318px;
+            display:flex;
+            width:100%;
+            .innerDataLeft{
+                width:70%;
+                .leftData{
+                    display:flex;
+                    flex-direction:column;
+                    width:100%;
+                    .rating{
+                        width:5rem;
+                        ul{
+                            display:flex;
+                            list-style: none;
+                            .star{
+                                margin-right:0.7rem;
+                                i{
+                                    font-size:20px;
+                                }
+                            }
+                            .checked{
+                                color: #FDB714;
+                            }
+                        }
+                    }
+                    .head{
+                        h1{
+                            color:white;
+                            font-size:45px;
+                            letter-spacing:2px;
+                            padding:0;
+                            margin:0;
+                            text-shadow: $textShadow;
+
+                        }
+                        h2{
+                            font-size:33px;
+                            color: #FDA014;
+                            font-weight:500;
+                            text-transform:uppercase;
+                            letter-spacing:8px;
+                            padding:0;
+                            margin:0;
+                            text-shadow: $textShadow;
+                        }
+                    }
+                    .iconz{
+                        height:10rem;
+                        display:flex;
+                        align-items:flex-end;
+                        width:10rem;
+                        ul{
+                            display:flex;
+                            list-style:none;
+                            li{
+                                transform: scale(0.6);
+                                color: white;
+                                width:10rem;
+                                position: relative;
+                                display:flex;
+                                justify-content:center;
+                                font-size:1.8rem;    
+                                &:before{
+                                    content:"";
+                                    position: absolute;
+                                    top:-9rem;
+                                    
+                                    background-color: red;
+                                    padding:4rem 4rem;
+                                    border-radius:50px;
+                                    background-image:url('/assets/img/iconz/wifi.png');
+                                    background-repeat:no-repeat;
+                                    background-position: center;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            .innerDataRight{
+                width:30%;
+            }
+        }
+    }
+}

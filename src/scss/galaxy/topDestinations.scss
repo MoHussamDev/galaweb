@@ -1,5 +1,7 @@
 #topDestinationsGala{
     padding-bottom:3rem;
+    background-color: white;
+    padding-top:0 !important;
     #topDestinationsGrid{
         display:flex;
         flex-wrap:wrap;
@@ -14,8 +16,23 @@
             align-items:center;
             z-index:0;
             cursor:pointer;
+            &:hover{
+                &:before{
+
+                    background-color: $packageOverlayHover;
+                }
+                h1{
+                    opacity:1;
+                }
+            }
             h1{
                 color: white;
+                opacity:0;
+                transition:all 0.5s ease;
+                text-transform:uppercase;
+                letter-spacing:3px;
+                font-weight:500;
+
             }
             &:before{
                 content:'';
@@ -25,6 +42,7 @@
                 height:100%;
                 background-color: $packageOverlay;
                 z-index:-1;
+                transition:all 0.5s ease;
             }
 
         }

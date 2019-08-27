@@ -13,33 +13,48 @@ var mySwiper = new Swiper ('.swiper-container', {
         },
     }
   })
-  var swiper = new Swiper('.HotTravelPackagesCards', {
-    slidesPerView:6,
-    // width:2000,
-    setWrapperSize:true,
-    freeModeSticky:true,
-    freeMode:true,
-    spaceBetween:200,
-    slidesOffsetBefore:50,
-    loop:true,
-    autoplay:{
-      delay: 3000,
+  var swiper = new Swiper('.sliderOraGala', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
-    breakpoints: {
-      1240: {
-        slidesPerView: 4,
-
-      },
-      1600: {
-        slidesPerView:5,
-
-      },
-      1450: {
-        slidesPerView: 4,
-
-      },
-    }
   });
+  var swiper = new Swiper('.vertical-container', {
+    direction: 'vertical',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+  // var swiper = new Swiper('.HotTravelPackagesCards', {
+  //   slidesPerView:6,
+  //   // width:2000,
+  //   setWrapperSize:true,
+  //   freeModeSticky:true,
+  //   freeMode:true,
+  //   spaceBetween:200,
+  //   slidesOffsetBefore:50,
+  //   loop:true,
+  //   autoplay:{
+  //     delay: 3000,
+  //   },
+  //   breakpoints: {
+  //     1240: {
+  //       slidesPerView: 4,
+
+  //     },
+  //     1600: {
+  //       slidesPerView:5,
+
+  //     },
+  //     1450: {
+  //       slidesPerView: 4,
+
+  //     },
+  //   }
+  // });
 
   $(".HotTravelPackagesCards").hover(function() {
     swiper.autoplay.stop();

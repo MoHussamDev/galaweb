@@ -63,14 +63,15 @@
                             color:white;
                             display: flex;
                             flex-direction:column;
-                            align-items:center;
+                            align-items:flex-start;
                             justify-content:center;
                             height: inherit;
+                            padding-left:5rem;
                             &:before{
                                 content:"";
                                 position: absolute;
-                                left:-2rem;    
-                                padding:4rem;
+                                left:-1rem;    
+                                padding:3rem;
                                 background: url('../../assets/img/iconz/plan.svg');
                                 background-size:cover;
                                 
