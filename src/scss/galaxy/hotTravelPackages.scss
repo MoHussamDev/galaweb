@@ -1,6 +1,7 @@
 #hotTravelPackage{
     // padding-top:10rem !important;
-    background-color: $whiteDark;
+    background-color: $whiteDark !important;
+    
     .CardContainerGala{
         width:100%;
         display:flex;
@@ -19,7 +20,7 @@
                 .swiper-slidef{
                    position: relative;
                     height:auto;
-                    width:23%;
+                    width:250px;
                    
                     
                     &:hover{

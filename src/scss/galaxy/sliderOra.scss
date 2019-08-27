@@ -1,11 +1,13 @@
-
-
-#slideOra{
-    .sliderOraGala{
-        width:100% !important;
-        overflow: hidden;
-        height: 20rem;
-        .swiper-slide{
+#slidersGala{
+    background-color: $whiteDark;
+    padding-bottom:2rem !important;
+    
+    #slideOra{
+        .sliderOraGala{
+            width:100% !important;
+            overflow: hidden;
+            height: 20rem;
+            .swiper-slide{
                 background-size:cover;
                 position:relative;
                 z-index:0;
@@ -30,12 +32,12 @@
                     top:0;
                     z-index:-1;
                 }
+            }
         }
     }
-}
-#rightBanner{
-    height:22rem;
-    .vertical-container{
+    #rightBanner{
+        height:22rem;
+        .vertical-container{
         height: 100%;
         overflow: hidden;
         width: 97%;
@@ -70,7 +72,7 @@
                     font-size:1rem;
                     font-weight:600;
                 }
-
+                
             }
             &:before{
                 content:'';
@@ -82,7 +84,8 @@
                 top:0;
                 z-index:-1;
             }
-
+            
         }
     }
+}
 }
