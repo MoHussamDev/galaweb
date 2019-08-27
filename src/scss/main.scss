@@ -23,7 +23,9 @@
 @import './galaxy/info.scss';
 @import './galaxy/footer.scss';
 
-
+#separator{
+    background-color: $whiteDark;
+}
 .container-fluid{
     padding:0 !important;
 }
