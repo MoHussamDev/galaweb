@@ -1,4 +1,4 @@
-var menu = ['Slide 1', 'Slide 2', 'Slide 3']
+var menu = ['Slide 1', 'Slide 2']
 var mySwiper = new Swiper ('.swiper-container', {
     // If we need pagination
     loop:true,
