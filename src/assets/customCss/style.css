@@ -1722,8 +1722,10 @@
 /* 15.1 COMMON BANNER 
 /*-------------------------------------------------------*/
  .inner_banner {
-     background: url('../images/list-p-bg.jpg') no-repeat center center;
+     
      background-size: cover;
+     background-position:center;
+     background-position:center;
      padding: 180px 0px 40px 0px;
      position: relative;
 }
@@ -1797,8 +1799,9 @@
  .inner_banner a:hover {
 }
  .bread-acti {
-     color: #d6d6d6 !important;
-}
+     color: #FDA014 !important;
+     font-weight:500;
+    }
  .bg-none {
      background: none;
 }
