@@ -1,0 +1,151 @@
+// This is the single file output by sass. It is intended to ONLY @import other files.
+@import './tools/fonts';
+
+@import './tools/normalize';
+
+@import './tools/vars';
+
+@import './tools/mainSite';
+
+@import './tools/breakPoints';
+
+
+// _
+
+@import './galaxy/header';
+@import './galaxy/banner.scss';
+@import './galaxy/hotTravelDeals.scss';
+@import './galaxy/sliderOra.scss';
+@import './galaxy/whyUs.scss';
+@import './galaxy/hotTravelPackages.scss';
+@import './galaxy/topDestinations.scss';
+@import './galaxy/parralaxAccumar.scss';
+@import './galaxy/info.scss';
+@import './galaxy/footerTop.scss';
+@import './galaxy/footer.scss';
+@import './galaxy/upperfooter.scss';
+
+#separator{
+    background-color: $whiteDark;
+}
+.container-fluid{
+    padding:0 !important;
+}
+
+hr{
+    margin-top:7rem;
+}
+section{
+    padding-top:2rem !important;
+    #upperTitleGala{
+        
+        
+        display:flex;
+        flex-wrap:wrap;
+        width:100%;
+        align-items:center;
+        position: relative;
+        margin-bottom:3rem;    
+        .titleGala{
+            width:85%;
+            height:inherit;
+            @include mq('phone'){
+                width:50%;
+            }
+            h1{ 
+                @include mq('phone'){
+                   transform:scale(0.5);
+                   position: relative;
+                   left:-2rem;
+                }
+                position:relative;
+                left:2rem;
+                display:inline-block;
+                transform:scale(0.8);
+                font-weight:400;
+                color:$sidBlu;
+                text-transform: uppercase;
+                font-size:2.5rem;
+                letter-spacing: -0.5px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+                span{
+                    font-weight:600;
+                    padding-left:0.8rem;
+                    color: $mainOra;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    letter-spacing: 2px;
+                }
+            }
+            &:before{
+                content:'';
+                
+                background:url('../../assets/img/iconz/galaxiaTours.svg');
+                background-size:cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top:1.5rem;
+                left:-1rem;
+                padding:2rem;
+            }
+        }
+        .seeMoreGala{
+            
+            transform: scale(0.8);
+            transform-origin: 50% 50%;
+            height:inherit;
+            width:15%;
+            font-weight: 500;
+            background-color: $mainOra;
+            @include mq('phone'){
+                width:50%;
+                transform: scale(0.6);
+                position:relative;
+                right:-2rem;
+             }
+
+            a{
+                cursor: pointer;
+                color:white;
+                font-weight:600;
+                
+                width:17rem;
+                height:4rem;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                border-radius:3px;
+        
+                &:before{
+                    content:"\f00e";
+                    font: normal normal normal 20px/1 FontAwesome;
+                    padding-right:0.5rem;
+                    position: relative;
+                    top:0.3rem;
+                }
+            }
+
+        }
+        .description{
+            width:100%;
+            align-self:flex-start;
+            display:flex;
+            justify-content:flex-start;
+
+            h2{
+
+                text-transform: capitalize;
+                font-size:1.2rem;
+                color:  $mainFooterColor;;
+                display: inline-block;
+                padding:0;
+                margin:0;
+                font-weight:600;
+
+            }
+        }
+    }
+}

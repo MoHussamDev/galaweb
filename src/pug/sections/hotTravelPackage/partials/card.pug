@@ -1,0 +1,13 @@
+mixin packageCard(name,location,price,image)
+    #hotTravelPackagesCard
+        .upperCardPackage(style="background-image:url(assets/img/foloImage/"+image+".jpg)")
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto distinctio cum recusandae tenetur vitae unde molestiae numquam eum, repudiandae dolor magnam error quas temporibus, praesentium voluptate harum natus! Impedit, possimus!
+        .downCardPackage
+            .dataOfPackage
+                span=location
+                h1=name 
+            .priceAndButton
+                .price
+                    span=price
+                .btnCardPackage
+                    a Read More        

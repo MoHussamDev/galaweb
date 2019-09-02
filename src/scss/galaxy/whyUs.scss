@@ -1,0 +1,124 @@
+#whyUs{
+    background-color: $sidBlu;
+    position: relative;
+    height: 9rem;
+    overflow: hidden;
+    z-index:-2;
+    @include mq('phone'){
+        display:none;
+    }
+    &:after{
+        content:"";
+        position: absolute;
+        top:0;
+        right: -20rem;
+        width:70%;
+        height: 100%;
+        padding: 2rem;
+        background-color: $mainOra;
+        transform: skew(50deg);
+        z-index:-1;
+        @include mq('desktop'){
+            right: -15rem;  
+        }
+        @include mq('desktop-wide'){
+            right: -10rem;  
+        }
+
+    }
+    .whyUsDataGala{
+        display:flex;
+        width:100%;
+        height:9rem;
+        .whyUsDataLeftGala{
+            transform:scale(0.9);
+            position: relative;
+            width:40%;
+            height: inherit;
+            display:flex;
+            align-items:flex-start;
+            flex-direction:column;
+            justify-content: center;
+            h3{
+                margin:0;
+                padding:0;
+                color:white;
+                font-weight:400;
+                text-transform:uppercase;
+                font-size:1.5rem;
+                letter-spacing:2px;
+                font-style: italic;
+            }
+            h2{
+                margin:0;
+                padding:0;
+                color:white;
+                font-weight: 500;
+                text-transform:uppercase;
+                align-self:flex-end;
+                position: relative;
+                right:10rem;
+                font-style: italic;
+                span{
+                    font-weight:600;
+                    color: $mainOra;
+                    letter-spacing:1px;
+
+                }
+
+            }
+        }
+        .whyUsDataRight{
+            display:flex;
+            width:60%;
+            height:inherit;
+            align-items:center;
+            justify-content: space-between;
+            .why{
+                display:flex;
+                max-width:33.3%;
+                max-height: 80%;
+                transform: scale(0.8);
+                .leftWhy{
+                    height:inherit;
+                    min-width:20%;
+                    display:flex;
+                    align-items:center;
+                    justify-content:flex-end;
+
+                    i{
+                        font-size:4rem;
+                        color: $back1;
+                    }
+                }
+                .rightWhy{
+                    padding-left: 0.6rem;
+                    display:flex;
+                    align-items:flex-start;
+                    justify-content:center;
+                    flex-direction:column;
+                    width:80%;
+                    h3{
+                        color: $back1;
+                        font-size:1.8rem;
+                        font-weight:600;  
+                        margin:0;
+                        padding:0;
+                        letter-spacing:1.5px;
+                    }
+                    span{
+                        margin:0;
+                        padding:0;
+                        color:$back1;
+                        font-size:1rem;
+                        font-weight:600;
+                        letter-spacing:2px;
+                        text-transform:uppercase;
+                        width: 18rem !important;
+}    
+                    }
+                }
+            }  
+        }
+    }
+    

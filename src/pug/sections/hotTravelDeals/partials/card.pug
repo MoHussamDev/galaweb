@@ -1,0 +1,19 @@
+mixin card(name,price,image)
+    .gridCardGala.overLay(style="background-image:url(assets/img/foloImage/"+image+".jpg)") 
+            .dataGala
+                .leftGala
+                    .topLeftGala
+                        span travel to
+                    .midLeftGala    
+                        h1=name
+                    .rankingGala
+                       ul
+                         li.star.checked  <i class="fa fa-star" aria-hidden="true"></i>  
+                         li.star.checked  <i class="fa fa-star" aria-hidden="true"></i>  
+                         li.star.checked  <i class="fa fa-star" aria-hidden="true"></i>  
+                         li.star.checked  <i class="fa fa-star" aria-hidden="true"></i>  
+                         li.star  <i class="fa fa-star" aria-hidden="true"></i>  
+
+                .rightGala
+                    .price
+                        span=price

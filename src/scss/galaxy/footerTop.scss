@@ -1,0 +1,107 @@
+#footerTop{
+    display:flex;
+    flex-direction:column;
+    height:40rem;
+    justify-content:flex-end;
+    @include mq('phone'){
+        display:none;
+    }   
+    .lowerGala{
+        background-color: orange;
+        height: 30%;
+            .dataIn{
+                display:flex;
+
+                .imgWrapper{
+                    position:relative;
+                    top:-26rem;
+                    left:0;
+                    height:100%;
+                    width:50%;
+                    img{
+                        position: absolute;
+                        left:8rem;
+                        height:38rem;
+                    }
+                }
+                .another{
+                width:50%;    
+
+                
+                    .innerdiv{
+                        width:50rem;
+                        background-color: #0055A5;
+                        height: 12rem;
+                        position:relative;
+                        // top:-2rem;
+                        .upperData{
+                            position:absolute;
+                            top:-10rem;
+                            left:-18rem;
+                          h1{
+                                margin:0;
+                                padding:0;
+                                font-weight:600;
+                                text-transform:uppercase;
+                                font-size:2.2rem;
+                                color: #005187;
+                                letter-spacing:2px;
+                            }
+                            h2{
+                                margin:0;
+                                padding:0;
+                                font-weight:500;
+                                text-transform:uppercase;
+                                font-size:2rem;
+                                letter-spacing:2px;
+                                color: #005187;
+                            }
+                          
+                        }
+                        .downData{
+                            width:100%;
+                            
+                            display:flex;
+                            div{
+                                display:flex;
+                                align-items:center;
+                                width:50%;
+                                height:13rem;
+                                    .divWrapper{
+                                        display:flex;
+                                        flex-direction:column;
+                                        justify-content:center;
+                                        
+                                      height:80%;
+                                      width:100%;
+                                      h1{
+                                          margin:0;
+                                          padding:0;
+                                          color :white ;
+                                          font-size:2.1rem;
+                                          letter-spacing:1px;
+                                          text-transform:uppercase;
+                                          
+                                        }
+                                        h5{
+                                            margin:0;
+                                            color :white ;
+                                            text-transform:uppercase;
+                                            font-size:2.1rem;
+                                            letter-spacing:1px;
+                                            text-transform:uppercase;
+                                        padding:0;
+                                        font-weight:500;
+                                      }
+
+                                    }
+                            }
+                        }
+                    }
+                }
+            }
+    }
+
+
+
+}
