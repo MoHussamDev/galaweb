@@ -2,6 +2,9 @@
     padding-bottom:3rem;
     background-color: white;
     padding-top:0 !important;
+    @include mq('phone'){
+        display:none;
+    }
     #topDestinationsGrid{
         display:flex;
         flex-wrap:wrap;

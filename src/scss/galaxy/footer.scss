@@ -1,4 +1,7 @@
 #footer{
+    @include mq('phone'){
+        display:none;
+    }
     background-color: $kharawy;
     display:flex;
     height:32rem;
@@ -15,7 +18,7 @@
             display:flex;
             align-items:center;
             
-        .aboutUs{
+        .aboutUsGala{
             width:33.3%;
             height:80%;
             display:flex;
@@ -41,7 +44,7 @@
                     width:80%;   
                 }
             }
-            .socialinks{
+            .socialinksGala{
                 height:20%;
                 display:flex;
                 align-items:center;
@@ -53,19 +56,19 @@
             }
             
         }
-        .links{
+        .linksGala{
             width:41.6%;
             height:80%;
             display: flex;
             
            .ListCoulmn{
                 width: 33.3%;
-                .head{
+                .headFooterGala{
                     color: white;
                     text-transform:uppercase;
                     letter-spacing:1px;
                 }
-                .list{
+                .listFooterGala{
                     ul{
                         list-style: none;
                         
@@ -120,6 +123,9 @@
 
 }
     #footerBar {
+        @include mq('phone'){
+            display:none;
+        }
         background-color: $kharawy2;
         height: 3rem;
         .copyRights{

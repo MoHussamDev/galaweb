@@ -2,6 +2,9 @@
     width:100%;
     height:40rem;
     background-color: white !important;
+    @include mq('phone'){
+        display:none;
+    }
     .infoSectionGala{
         height:40rem;
         display:flex;

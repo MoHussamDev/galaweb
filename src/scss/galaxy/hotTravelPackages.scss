@@ -1,7 +1,9 @@
 #hotTravelPackage{
     // padding-top:10rem !important;
     background-color: $whiteDark !important;
-    
+    @include mq('phone'){
+        display:none;
+    }
     .CardContainerGala{
         width:100%;
         display:flex;
@@ -11,7 +13,6 @@
             height:46rem;  
             display:flex;
             align-items:center;  
-            padding-left:1rem;
             .swiper-wrappers{ 
                 height:80%;
                 display:flex;
@@ -24,7 +25,7 @@
                    
                     
                     &:hover{
-                        z-index:1000000;
+                        z-index:950;
                     }
                     #hotTravelPackagesCard{
                         background-color: white;

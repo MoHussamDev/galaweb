@@ -16,10 +16,22 @@ var mySwiper = new Swiper ('.swiper-container', {
   var swiper = new Swiper('.sliderOraGala', {
     slidesPerView: 3,
     spaceBetween: 30,
+    breakpoints: {
+
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      }
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
+   
   });
   var swiper = new Swiper('.vertical-container', {
     direction: 'vertical',
