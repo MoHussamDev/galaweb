@@ -1722,8 +1722,10 @@
 /* 15.1 COMMON BANNER 
 /*-------------------------------------------------------*/
  .inner_banner {
-     background: url('../images/list-p-bg.jpg') no-repeat center center;
+     
      background-size: cover;
+     background-position:center;
+     background-position:center;
      padding: 180px 0px 40px 0px;
      position: relative;
 }
@@ -1767,7 +1769,7 @@
 }
  .inner_banner h2 span {
      color: #FFF;
-     font-family: 'Quicksand', sans-serif;
+     font-family: 'Montserrat', sans-serif !important;
      font-size: 32px;
      font-weight: 600;
 }
@@ -1797,8 +1799,9 @@
  .inner_banner a:hover {
 }
  .bread-acti {
-     color: #d6d6d6 !important;
-}
+     color: #FDA014 !important;
+     font-weight:500;
+    }
  .bg-none {
      background: none;
 }
@@ -2086,7 +2089,7 @@
  .tour_head1 {
 }
  .tour_head1 h3 {
-     background: url(../images/umbrella.png) no-repeat left center;
+     /* background: url(../images/umbrella.png) no-repeat left center; */
      padding-left: 35px;
      color: #213d44;
      margin-bottom: 20px;
@@ -8792,3 +8795,15 @@ margin-bottom:0.2rem;
 }
 
    }
+   #leftContainerWrapper .tour_head1 h3 {
+       padding-left:0rem !important;
+
+   }
+
+   #leftContainerWrapper .tour_head1 h3::before{
+    content:"\f0fe" ;
+    font: normal normal normal 24px/1 FontAwesome;
+    padding-right:1rem; 
+    color:#F78F1E;
+
+}
