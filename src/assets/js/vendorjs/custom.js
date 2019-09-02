@@ -48,14 +48,14 @@ $(document).ready(function() {
     // $('.sdb-btn-edit').mouseleave(function() {
     //     $(this).text("edit my profile");
     // }); 
-    //MOBILE MENU OPEN
-    $(".ed-micon").on('click', function() {
-        $(".ed-mm-inn").addClass("ed-mm-act");
-    });
-    //MOBILE MENU CLOSE
-    $(".ed-mi-close").on('click', function() {
-        $(".ed-mm-inn").removeClass("ed-mm-act");
-    });
+    // //MOBILE MENU OPEN
+    // $(".ed-micon").on('click', function() {
+    //     $(".ed-mm-inn").addClass("ed-mm-act");
+    // });
+    // //MOBILE MENU CLOSE
+    // $(".ed-mi-close").on('click', function() {
+    //     $(".ed-mm-inn").removeClass("ed-mm-act");
+    // });
 
     //GOOGLE MAP IFRAME
     // $('.map-container').on('click', function() {

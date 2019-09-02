@@ -1722,11 +1722,10 @@
 /* 15.1 COMMON BANNER 
 /*-------------------------------------------------------*/
  .inner_banner {
-     background-repeat:no-repeat;
+     background: url('../images/list-p-bg.jpg') no-repeat center center;
      background-size: cover;
      padding: 180px 0px 40px 0px;
      position: relative;
-     background-position: center;
 }
  .inner_banner::before {
      content: '';
@@ -1750,7 +1749,7 @@
      background-size: cover;
 }
  .inner_banner_4 {
-     background: url('../img/foloImage/2.jpg') no-repeat center center;
+     background: url('../images/banner/4.jpg') no-repeat center center;
      background-size: cover;
 }
  .inner_banner_5 {
@@ -1761,7 +1760,7 @@
      position: relative;
 }
  .inner_banner h2 {
-     color: #FDA014;
+     color: #f4364f;
      font-size: 32px;
      display: inline-block;
      font-weight: 600;
@@ -1798,8 +1797,7 @@
  .inner_banner a:hover {
 }
  .bread-acti {
-     color: #FDA014 !important;
-     font-weight:500;
+     color: #d6d6d6 !important;
 }
  .bg-none {
      background: none;
@@ -5692,7 +5690,7 @@
      font-family: 'Quicksand', sans-serif;
 }
  .main-menu ul li a:hover{
-     color: #FDA014;
+     color: #e23464;
 }
  .main-menu ul li a:after{
      content: "";
@@ -5701,8 +5699,8 @@
      height: 3px;
      bottom: 12px;
      left: 0;
-     color: #FDA014;
-     background-color: #FDA014;
+     color: #e23464;
+     background-color: #e23464;
      visibility: hidden;
      -webkit-transform: scaleX(0);
      transform: scaleX(0);
