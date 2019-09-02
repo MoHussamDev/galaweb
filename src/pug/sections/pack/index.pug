@@ -1,1 +1,111 @@
 include  ../../commons/upperBanner
+.container-fluid
+    section#cont.container
+        .row    
+            .col-md-9
+                #idTabs
+                    div.active
+                        a(href="#") Summmary 
+                    div
+                        a(href="#") Included 
+                    div
+                        a(href="#") Day by day 
+                    div
+                        a(href="#") Hotels 
+                    div
+                        a(href="#") Prices 
+                    div
+                        a(href="#") Photos 
+                #idTabsi 
+                    #summary.active
+                        a(href="#") Summmary        
+                    #included
+                        a(href="#") Included        
+                    #daybyday
+                        a(href="#") Day by day        
+                    #hotels
+                        a(href="#") Hotels        
+                    #price
+                        a(href="#") Prices        
+                    #photos
+                        a(href="#") Photos   
+                #leftContainerWrapper
+                    #suma.tour_head1
+                        h3 summmary            
+                    #imageLeft
+                        div(style="background-image: url('assets/img/foloImage/1.jpg');")        
+                              h4 any data w 5lasasdasdasd asdasdasd asdasdasd aasdasd 
+                        div(style="background-image: url('assets/img/foloImage/2.jpg');")        
+                              h4 any data w 5lasasdasdasd asdasdasd asdasdasd aasdasd 
+                        div(style="background-image: url('assets/img/foloImage/3.jpg');")        
+                              h4 any data w 5lasasdasdasd asdasdasd asdasdasd aasdasd 
+                        div(style="background-image: url('assets/img/foloImage/4.jpg');")        
+                              h4 any data w 5lasasdasdasd asdasdasd asdasdasd aasdasd 
+                    #parag Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim commodi culpa veniam inventore non labore nostrum voluptates asperiores qui rem! Corporis nam deleniti dolorem voluptatibus error et doloribus maiores mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim commodi culpa veniam inventore non labore nostrum voluptates asperiores qui rem! Corporis nam deleniti dolorem voluptatibus error et doloribus maiores mollitia. 
+                    .tour_head1.d-info-pack-days.days    
+                        h3 Detailed Day Wise Itinerary
+                        ul
+                            li.d-info-pack-days 
+                                i.fa.fa-clock-o 
+                                h4 
+                                  span Day : 1
+                                  | Anywhere 
+                            li.d-info-pack-days 
+                                i.fa.fa-clock-o 
+                                h4 
+                                  span Day : 2
+                                  | Anywhere 
+                            li.d-info-pack-days 
+                                i.fa.fa-clock-o 
+                                h4 
+                                  span Day : 3
+                                  | Anywhere 
+                #leftContainerWrapper
+                        #whatInc.tour_head1
+                            #whatIncTable
+                                #included 
+                                    h4 Included    
+                                    ul 
+                                        li Food 
+                                        li Food 
+                                        li Food 
+                                        li Food 
+                                        li Food 
+                                #notIncluded
+                                    h4 Not Included    
+                                    ul 
+                                        li data     
+                                        li data     
+                                        li data     
+                                        li data     
+                                        li data     
+                #leftContainerWrapper
+                    #customize
+                        h3 Did you know you can make this trip even better? 
+                        button(onclick="make()")  Customize This Tour
+                #daysEntered
+                    #leftContainerWrapper
+                        #topHead
+                            #day
+                                h4 Day
+                                span 1    
+                            #place
+                                h2 Cairo    
+                        #contBody
+                            #image(style="background: url('https://lh3.googleusercontent.com/-BHiBsm0YetM/VWZdO1yYXbI/AAAAAAAAETo/H_egkWAwFXo/cairo2.jpg') no-repeat ;")    
+                            #bodyOfContBody
+                                #ContBodyPar
+                                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, accusantium odit magni eius ut accusamus est asperiores maxime voluptate at delectus! Tempora quae labore quas modi repellat tenetur optio nulla!,Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, accusantium odit magni eius ut accusamus est asperiores maxime voluptate at delectus! Tempora quae labore quas modi repellat tenetur optio nulla!       
+                                #additions
+                                    h5#hotel MovienPick Sheraton     
+                                    h5#place Cairo     
+                        #footerContent
+                            #breakfast.active
+                                i.fa.fa-coffee
+                                |  Breakfast    
+                            #Lunch.active
+                                i.fa.fa-cutlery
+                                |  Lunch    
+                            #Dinner.active
+                                i.fa.fa-glass
+                                |  Dinner    
