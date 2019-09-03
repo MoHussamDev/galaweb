@@ -81,21 +81,20 @@
      -ms-transition: all 0.5s ease;
      -o-transition: all 0.5s ease;
 }
- .com-colo-abou {
-}
  .com-colo-abou p, li {
      color: #888;
 }
  .inn-page-bg {
      position: relative;
      overflow: hidden;
-     background: #f3f3f3;
+     background: white;
 }
  .inn-page-con-bg {
      position: relative;
      overflow: hidden;
      background: #fff;
      box-shadow: 0px -2px 7px rgba(150, 150, 150, 0.4);
+     margin-bottom:1rem;
 }
  ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
@@ -213,7 +212,7 @@
      */
 }
  .spe-title h2 span {
-     color: #f4364f;
+     color: #f78f1e;
      font-size: 44px;
      font-weight: 600;
      font-family: 'Quicksand', sans-serif;
@@ -1762,7 +1761,7 @@
      position: relative;
 }
  .inner_banner h2 {
-     color: #f4364f;
+     color: #f78f1e;
      font-size: 32px;
      display: inline-block;
      font-weight: 600;
