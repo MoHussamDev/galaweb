@@ -1,3 +1,46 @@
-h1{
-    color:black;
+#about-us{
+    .banner-container{
+
+    }
+    .repostion{
+        display:flex;
+        flex-direction: column;
+        .title{
+            display: flex;
+            // justify-content: center;
+            color :#f4363f;
+            padding-top: 5rem;
+            span{
+                font-size: 44px;
+                font-weight: 600;
+                
+            }
+        }   
+                
+        .sub-title{
+            display: flex;
+            padding-top:5rem;
+            justify-content: center;
+            color: $sidBlu;
+            span{
+                font-weight: 500;
+                font-size: 3rem;
+                }
+        }
+        .pragraph-area{
+            padding-top: 5rem;
+            .p{
+                color:gray;
+                font-weight:500;
+            }
+            .top-title{
+                color:$sidBlu;
+                text-transform: uppercase;
+            }
+            .upper-title{
+                color:black;
+                // text-transform: uppercase;
+            }
+        }
+    }
 }
