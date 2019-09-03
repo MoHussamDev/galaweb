@@ -12,34 +12,16 @@ html(lang="en")
         link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
         link(rel="stylesheet", href="assets/customCss/swiper.min.css")
         //- link(rel="stylesheet", href="assets/customCss/radio.css")
-        link(rel="stylesheet", href="assets/customCss/mob.css")
+        //- link(rel="stylesheet", href="assets/customCss/mob.css")
         //- link(rel="stylesheet", href="assets/css/animate.css")
         link(rel="stylesheet", href="assets/css/main.css")
 
     body
         block content 
             include sections/navigation/index
-            include sections/header/header
-            include sections/hotTravelDeals/index  
-            #slidersGala.container-fluid
-                .container
-                    .row
-                        .col-md-8
-                             include sections/slideOra/index  
-                        .col-md-4 
-                             include sections/rightBanner/index     
-            #separator.container-fluid
-                .container 
-                    hr  
-            //- include sections/topDestinations/index                         
-            include sections/hotTravelPackage/index
-            include sections/parralax/index    
-            include sections/whyUs/index    
-            include sections/info/index    
+            include sections/hotel-details/hotel-details
             include sections/footerTop/index    
             include sections/footer/footer
-            include sections/hotel-details/hotel-details         
         block scripts 
             include  mains/scripts 
-            
             
