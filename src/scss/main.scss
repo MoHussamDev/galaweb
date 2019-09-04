@@ -150,3 +150,74 @@ section{
         }
     }
 }
+
+#cuuter{
+    padding-top:1rem !important;
+    background-color: $whiteDark;
+    box-shadow:$bannerShadow;
+    height: 20rem;
+    display:flex;
+    align-items:center;
+    .container{
+        padding:0;
+        }
+    #cutterData{
+        
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        height:10rem;
+        h1{
+            margin:0;
+            padding:0;
+            font-weight:600;
+            color: $sidBlu;
+        }
+        button{
+            background-color: $mainOra;
+            border:0;
+            width:15rem;
+            height:4rem;
+            color:white;
+            font-weight:500;
+            font-size:1.2rem;
+            transform:scale(0.9);
+
+        }
+
+    } 
+    #desco{
+        p{
+            font-weight:500;
+            color:$kharawy;
+            font-size:1.3rem;
+        }
+    }
+
+}
+
+#distenationCard{
+    h4{
+        color :$kharawy2;
+        font-family: 'Montserrat', sans-serif !important;
+
+        
+    }
+    #para{
+        padding-top:1rem;
+        background-color: $whiteDark;
+        color: $kharawy;
+        font-weight:500;
+        font-family: 'Montserrat', sans-serif !important;
+
+    }
+}
+
+#whyThisDestination{
+    border-top:1px solid #ccc;
+    background-color: $mainBlu;
+    h2 {
+        color :white;
+    }
+    @import './accordion.scss';
+}

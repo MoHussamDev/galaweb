@@ -1,14 +1,15 @@
-section(style="padding-top:0rem !important ;")
-  .rows.inner_banner(style="background-image:url('./assets/img/foloImage/3.jpg');")
-    .container
-      h2
-        span All 
-        |  Destinations
-      ul
-        li
-          a(href='#inner-page-title') Home
-        li
-          i.fa.fa-angle-right(aria-hidden='true')
-        li
-          a.bread-acti(href='#inner-page-title') All Destinations
-      p Enjoy your holidays with distinctive experience
+mixin upperbar(one , two) 
+    section(style="padding-top:0rem !important ;")
+      .rows.inner_banner(style="background-image:url('./assets/img/foloImage/3.jpg');")
+        .container
+          h2
+            span=one 
+            =two
+          ul
+            li
+              a(href='#inner-page-title') Home
+            li
+              i.fa.fa-angle-right(aria-hidden='true')
+            li
+              a.bread-acti(href='#inner-page-title') All Destinations
+          p Enjoy your holidays with distinctive experience

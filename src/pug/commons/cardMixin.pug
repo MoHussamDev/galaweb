@@ -1,0 +1,15 @@
+mixin cardMixin(name , image )
+        #distenationCard.col-md-4.col-sm-6.col-xs-12.b_packages
+            .v_place_img
+                img(src='assets/img/foloImage/cards/' + image + '.jpg' alt='Tour Booking' title='Tour Booking')
+            .b_pack.rows
+                .col-md-8.col-sm-8
+                    h4.destin
+                        a(href='tour-details.html')
+                        =name
+
+                .col-md-4.col-sm-4(style="text-align: right;")
+                    a(style="margin: 15px 0;display: inline-block;font-size: 12px;background-color:#FDA014; width:8rem; height:3rem; display:flex; align-items:center; justify-content:center; link-style:none; color:white; font-weight:500; ",href='tour-details.html')
+                        |  Read more
+                #para.col-md-12.col-sm-12
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quia officiis ipsam amet molestias, dolores temporibus autem tempore mollitia! Et soluta quibusdam atque quo minus veniam voluptas ipsum necessitatibus laborum.
