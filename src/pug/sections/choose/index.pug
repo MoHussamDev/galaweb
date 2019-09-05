@@ -1,0 +1,27 @@
+include  ../../commons/distBanner
+include  ../../commons/packageCard
++upperbar("bannerEgypt")
+include ../../commons/flag
+section#choosePackage.container-fluid
+    .container
+        #filter
+            .count 
+                h1 4 Tours
+            .select
+                select 
+                    option(value="1")  Sort by Price     
+                    option(value="1")  Sort By Lowest Price     
+                    option(value="1")  Sort By Heigst Price     
+                select 
+                    option(value="1")  Sort by Duration     
+                    option(value="1")  Sort By Lowest Duration     
+                    option(value="1")  Sort By Heigst Duration     
+        #screen
+                #results 
+                   +cardPackage     
+                   +cardPackage     
+                   +cardPackage     
+                   +cardPackage     
+                   +cardPackage     
+                   +cardPackage     
+                   +cardPackage     

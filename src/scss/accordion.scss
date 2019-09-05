@@ -8,7 +8,7 @@
     primary: #FDA014,
     white: #FFFFFF,
     light: #F4F4F4,
-    black: #333333,
+    black: #005187,
     grey: #C4C4C4,
     ghost: rgba(0,0,0,.0)
   );
@@ -26,41 +26,43 @@
     text-align: center;
     text-transform: uppercase;
     padding: 3rem 0;
-
-
   }
-
-
-
-
-  .section-title { @include section-title(map-get($colors, primary)); }
-
+  .section-title { @include section-title(map-get($colors, white)); }
   #faq {
     padding: 0 0 10rem;
     button {
         all: unset;
       }
     .accordion {
+
       .card {
+        
+         
         border: .1rem solid map-get($colors, grey);
         border-radius: .4rem;
         overflow: hidden;
         margin: 0 0 1.5rem;
-
+        width:100%;    
         .card-header {
           border: none;
           padding: 0;
+          height:7rem;
+          display:flex;
+          align-items:center;
 
           button {
             background: map-get($colors, primary) url('http://icons.iconarchive.com/icons/icons8/ios7/512/User-Interface-Minus-icon.png') no-repeat 98.5% center / contain;
             color: map-get($colors, white);
-            font-size: 2rem;
             width: 100%;
-            padding: 1rem 0;
+            padding: 2.3rem 0;
+            padding-left:1rem;
 
             span {
               display: block;
-              margin: 0 4rem 0 1.5rem;
+              font-weight:500;
+              font-size:2rem;
+              text-transform:upperCase;
+              
             }
 
             &:focus {
@@ -69,8 +71,15 @@
             }
 
             &.collapsed {
-              background: map-get($colors, white) url('https://image.flaticon.com/icons/png/128/61/61112.png') no-repeat 98.5% center / 18px 18px;
+              background: map-get($colors, white) url('https://image.flaticon.com/icons/png/128/61/61112.png') no-repeat 98.5% center / 15px 15px;
               color: map-get($colors, primary);
+          
+              span{
+                font-weight:500;
+                font-size:2rem;
+                text-transform:upperCase;
+
+              }
             }
           }
         }
@@ -80,6 +89,11 @@
           font-weight: 400;
           letter-spacing: .05rem;
           line-height: 155%;
+          padding-left:1rem;
+          padding-top:1rem;
+          font-size:1.3rem;
+          font-weight:500;
+          padding-bottom:1rem;
         }
       }
     }
