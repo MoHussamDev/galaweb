@@ -1,11 +1,8 @@
 # MoHussam Front End Kit
 
 A starter kit for compiling Sass, Pug , js and running a dev server.
-Created by Riad ZT riiiaddesign@gmail.com
 And Developed By MoHussam mohamedhussamdev@gmail.com
 
-This package is inspired by the Traversy Media and Dev Tips starter kits.
-Check out the starter kits they are awesome.
 
 
 TM: https://github.com/bradtraversy/sass_starter_pack
