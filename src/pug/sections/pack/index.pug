@@ -264,14 +264,96 @@ include ../../commons/packFlag
                                             td 1240 $
                                             td 1240 $
  
-            .col-md-3
+            .col-md-3(style="padding:0;")
                 #stick
-                    .right_price( style="margin-top:5rem; padding-top:2rem;")  
-                        .right_title(style="background:url('https://lh3.googleusercontent.com/--McVMfBzjnE/VVRSrN3O3LI/AAAAAAAADZw/5hgS2oBjjqY/Luxor-Temples%2Bof%2BKarnak-Great%2BHypostyle%2BHall-Ancient%2BThebes-M.jpg'); background-size:cover;")    
-                            h3 Starting From 
-                            h2 200 
-                                span $      
-                        ul
-                            li 
-                                button#openMod.link-btn Book Now              
-                                
+                    #inquire-now
+                        .form-header
+                            h4 Enquire Now
+                        form
+                            .text-area
+                                label Fisrt Name*
+                                input(type='text' name='firstname' )
+                            .text-area
+                                label Last Name*
+                                input(type='text' name='firstname' )
+                            .text-area
+                                label E-mail Address*
+                                input(type='email' name='firstname' )
+                            .text-area
+                                label Select your Nationality*
+                                select 
+                                    option(value="1")  Sort by Price     
+                                    option(value="1")  Sort By Lowest Price     
+                                    option(value="1")  Sort By Heigst Price     
+                            .form-inline
+                                label Mobile*
+                                .div
+                                    select.code 
+                                        option(value="1")  Country code  
+                                        option(value="1")  Sort By Lowest Price     
+                                        option(value="1")  Sort By Heigst Price     
+                                    input.phone(type='text' placeholder='phone number' )
+                            .text-area
+                                label from*
+                                input(type='date' name='firstname' )
+                            .text-area
+                                label to*
+                                input(type='date' name='firstname' )
+                            //- .child-inline
+                            //-     .double-label
+                            //-         p.top No.&nbsp; of  Adults
+                            //-         P.down ( + 12 years )
+                            //-     .minus-squar
+                            //-         .btn -
+                            //-     .number
+                            //-         label 1
+                            //-     .plus-squar
+                            //-         .btn +
+                            //- .child-inline
+                            //-     .double-label
+                            //-         p.top No. of Children
+                            //-         P.down ( + 12 years )
+                            //-     .minus-squar
+                            //-         .btn -
+                            //-     .number
+                            //-         label 1
+                            //-     .plus-squar
+                            //-         .btn +
+                            //- input-group.plus-minus-input
+                            //-     .input-group-button
+                            //-         button.button.hollow.circle(type='button' data-quantity='minus' data-field='quantity')
+                            //-             i.fa.fa-minus(aria-hidden='true')
+                            //-         input.input-group-field(type='number' name='quantity' value='0')
+                            //-         .input-group-button
+                            //-              button.button.hollow.circle(type='button' data-quantity='plus' data-field='quantity')
+                            //-                 i.fa.fa-plus(aria-hidden='true')
+                            .child-inline
+                                .double-label
+                                    p.top No. of  Adults
+                                    P.down ( + 12 years )
+                                .inputs
+                                    input#moins(type='button' value='-' onclick='minus()')
+                                    input#count(type='text' size='25' value='1' )
+                                    input#plus(type='button' value='+' onclick='plus()')
+                            .child-inline
+                                .double-label
+                                    p.top No. of Children
+                                    P.down ( 2 to 11 years )
+                                .inputs
+                                    input#moins(type='button' value='-' onclick='minus()')
+                                    input#count(type='text' size='25' value='0' )
+                                    input#plus(type='button' value='+' onclick='plus()')
+                            .child-inline
+                                .double-label
+                                    p.top No. of Infants
+                                    P.down ( 0 to 2 years )
+                                .inputs
+                                    input#moins(type='button' value='-' onclick='minus()')
+                                    input#count(type='text' size='25' value='0' )
+                                    input#plus(type='button' value='+' onclick='plus()')
+                            .text-area
+                                input.cheakbox(type='checkbox' name='vehicle1' value='Bike')
+                                |  I have a bike
+                            input(type='submit' value='Submit' style="width:90%")
+                        
+

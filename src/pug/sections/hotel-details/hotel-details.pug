@@ -1,7 +1,9 @@
-// ====== BANNER ==========
-include  ../../commons/upperBanner
+include  ../../commons/distBanner
+include  ../../commons/packageCard
++upperbar("bannerEgypt")
+include ../../commons/flag
 // ====== TOUR DETAILS - BOOKING ==========
-section(style="padding-top:0 !important;")
+//- section(style="padding-top:0 !important;")
   #inner-page-title.rows.banner_book
     .container
       .banner_book_1
@@ -14,108 +16,26 @@ section(style="padding-top:0 !important;")
 // ====== TOUR DETAILS ==========
 section
   .rows.inn-page-bg.com-colo
-    .container.inn-page-con-bg.tb-space
+    .container.inn-page-con-bg
       .col-md-9
         // ====== TOUR TITLE ==========
-        .tour_head
-          h2
-            | Universal luxury Grand Hotel 
-            span.tour_star
-              i.fa.fa-star(aria-hidden='true')
-              i.fa.fa-star(aria-hidden='true')
-              i.fa.fa-star(aria-hidden='true')
-              i.fa.fa-star(aria-hidden='true')
-              i.fa.fa-star-half-o(aria-hidden='true')
-            span.tour_rat 4.5
+        //- .tour_head
+        //-   h2
+        //-     | Universal luxury Grand Hotel 
+        //-     span.tour_star
+        //-       i.fa.fa-star(aria-hidden='true')
+        //-       i.fa.fa-star(aria-hidden='true')
+        //-       i.fa.fa-star(aria-hidden='true')
+        //-       i.fa.fa-star(aria-hidden='true')
+        //-       i.fa.fa-star-half-o(aria-hidden='true')
+        //-     span.tour_rat 4.5
         // ====== TOUR DESCRIPTION ==========
         .tour_head1.hotel-com-color
-          h3 About GRAND HOTEL
+          h3 Old Palace Resort
           p
-            | Discover two of South America&rsquo;s greatest cities, Rio de Janeiro and Buenos Aires, at a leisurely pace. A major highlight on this journey is a visit to Iguassu Falls in between your two city stays. It truly is one of the most spectacular sights on Earth. See the impressive falls from both the Brazilian and Argentine sides.
+            | Welcome to the OLD PALACE RESORT—Sahl Hasheesh—RED SEA, Egypt where the sum of All what we have to offer will sure add up to a unique experience and memorable times for you to cherish. We have you in mind in everything we do!
           p
             | Brazil&rsquo;s view takes you through clouds of mist and the opportunity to see these 275 falls, spanning nearly two miles! Argentina&rsquo;s side allows you to walk along the boardwalk network and embark on a jungle train through the forest for unforgettable views. Hear the deafening roar and admire the brilliant rainbows created by the clouds of spray, and take in the majesty of this wonder of the world. From vibrant cities to scenic beauty, this vacation to Rio de Janeiro, Iguassu Falls, and Buenos Aires will leave you with vacation memories you&rsquo;ll cherish for life.
-        // ====== ROOMS: HOTEL BOOKING ==========
-        .tour_head1.hotel-book-room
-          h3 Photo Gallery
-          #myCarousel1.carousel.slide(data-ride='carousel')
-            // Indicators
-            ol.carousel-indicators.carousel-indicators-1
-              li(data-target='#myCarousel1' data-slide-to='0')
-                img(src='assets/img/gallery/s1.jpg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='1')
-                img(src='assets/img/gallery/s2.jpeg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='2')
-                img(src='assets/img/gallery/s3.jpeg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='3')
-                img(src='assets/img/gallery/s4.jpeg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='4')
-                img(src='assets/img/gallery/s5.jpeg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='5')
-                img(src='assets/img/gallery/s6.jpeg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='6')
-                img(src='assets/img/gallery/s7.jpeg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='7')
-                img(src='assets/img/gallery/s8.jpg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='8')
-                img(src='assets/img/gallery/s9.jpg' alt='Chania')
-            // Wrapper for slides
-            .carousel-inner.carousel-inner1(role='listbox')
-              .item.active
-                img(src='assets/img/gallery/s1.jpg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s2.jpeg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s3.jpeg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s4.jpeg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s5.jpeg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s6.jpeg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s7.jpeg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s8.jpg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s9.jpg' alt='Chania' width='460' height='345')
-            // Left and right controls
-            a.left.carousel-control(href='#myCarousel1' role='button' data-slide='prev')
-              span
-                i.fa.fa-angle-left.hotel-gal-arr(aria-hidden='true')
-            a.right.carousel-control(href='#myCarousel1' role='button' data-slide='next')
-              span
-                i.fa.fa-angle-right.hotel-gal-arr.hotel-gal-arr1(aria-hidden='true')
-        // ====== ABOUT THE TOUR ==========
-        .tour_head1
-          h3 special features
-          table
-            tr
-              th Places covered
-              th.event-res Inclusions
-              th.event-res Exclusions
-              th Event Date
-            tr
-              td Rio De Janeiro ,Brazil
-              td.event-res Accommodation
-              td.event-res Return Airfare &amp; Taxes
-              td Nov 12, 2017
-            tr
-              td Iguassu Falls 
-              td.event-res 8 Breakfast, 3 Dinners
-              td.event-res Arrival &amp; Departure transfers
-              td Nov 14, 2017
-            tr
-              td Peru,Lima 
-              td.event-res First-class Travel
-              td.event-res travel insurance
-              td Nov 16, 2017
-            tr
-              td Cusco &amp; Buenos Aires 
-              td.event-res Free Sightseeing
-              td.event-res Service tax of 4.50%
-              td Nov 18, 2017
-        // ====== HOTEL ROOM TYPES ==========
-        
         // ====== AMENITIES ==========
         .tour_head1.hot-ameni
           h3 Hotel Amenities
@@ -186,10 +106,64 @@ section
             li
               i.fa.fa-check(aria-hidden='true')
               |  Spa and Pool
+        // ====== ROOMS: HOTEL BOOKING ==========
+        .tour_head1.hotel-book-room
+          h3 Photo Gallery
+          #myCarousel1.carousel.slide(data-ride='carousel')
+            // Indicators
+            ol.carousel-indicators.carousel-indicators-1
+              li(data-target='#myCarousel1' data-slide-to='0')
+                img(src="assets/img/hotel model/Chalet3.jpg" alt='Chania')
+              li(data-target='#myCarousel1' data-slide-to='1')
+                img(src='assets/img/hotel model/Chalet4.jpg' alt='Chania')
+              li(data-target='#myCarousel1' data-slide-to='2')
+                img(src='assets/img/gallery/s3.jpeg' alt='Chania')
+              li(data-target='#myCarousel1' data-slide-to='3')
+                img(src='assets/img/gallery/s4.jpeg' alt='Chania')
+              li(data-target='#myCarousel1' data-slide-to='4')
+                img(src='assets/img/gallery/s5.jpeg' alt='Chania')
+              li(data-target='#myCarousel1' data-slide-to='5')
+                img(src='assets/img/gallery/s6.jpeg' alt='Chania')
+              li(data-target='#myCarousel1' data-slide-to='6')
+                img(src='assets/img/gallery/s7.jpeg' alt='Chania')
+              li(data-target='#myCarousel1' data-slide-to='7')
+                img(src='assets/img/gallery/s8.jpg' alt='Chania')
+              li(data-target='#myCarousel1' data-slide-to='8')
+                img(src='assets/img/gallery/s9.jpg' alt='Chania')
+            // Wrapper for slides
+            .carousel-inner.carousel-inner1(role='listbox')
+              .item.active
+                img(src='assets/img/hotel model/Chalet3.jpg' alt='Chania' width='460' height='345')
+              .item
+                img(src='assets/img/gallery/s2.jpeg' alt='Chania' width='460' height='345')
+              .item
+                img(src='assets/img/gallery/s3.jpeg' alt='Chania' width='460' height='345')
+              .item
+                img(src='assets/img/gallery/s4.jpeg' alt='Chania' width='460' height='345')
+              .item
+                img(src='assets/img/gallery/s5.jpeg' alt='Chania' width='460' height='345')
+              .item
+                img(src='assets/img/gallery/s6.jpeg' alt='Chania' width='460' height='345')
+              .item
+                img(src='assets/img/gallery/s7.jpeg' alt='Chania' width='460' height='345')
+              .item
+                img(src='assets/img/gallery/s8.jpg' alt='Chania' width='460' height='345')
+              .item
+                img(src='assets/img/gallery/s9.jpg' alt='Chania' width='460' height='345')
+            // Left and right controls
+            a.left.carousel-control(href='#myCarousel1' role='button' data-slide='prev')
+              span
+                i.fa.fa-angle-left.hotel-gal-arr(aria-hidden='true')
+            a.right.carousel-control(href='#myCarousel1' role='button' data-slide='next')
+              span
+                i.fa.fa-angle-right.hotel-gal-arr.hotel-gal-arr1(aria-hidden='true')
+        // ====== ABOUT THE TOUR ==========
+        
+        // ====== HOTEL ROOM TYPES ==========
+        
+        
         // ====== TOUR LOCATION ==========
-        .tour_head1.tout-map.map-container
-          h3 Location
-          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6290415.157581651!2d-93.99661009218904!3d39.661150926343694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880b2d386f6e2619%3A0x7f15825064115956!2sIllinois%2C+USA!5e0!3m2!1sen!2sin!4v1467884030780' allowfullscreen='')
+        
      
       .col-md-3.tour_r
         // ====== SPECIAL OFFERS ==========
@@ -206,10 +180,16 @@ section
         .tour_right.tour_incl.tour-ri-com
           h3 Trip Information
           ul
-            li Location : Rio,Brazil
-            li Arrival Date: Nov 12, 2017
-            li Departure Date: Nov 21, 2017
-            li Free Sightseeing &amp; Hotel
+            li Hotel Name : Rio,Brazil
+            //- li Hotel Stars : span.tour_star 
+            li Location : Rio,Brazil 
+            li Hotel Stars : 
+             span.tour_star
+               i.fa.fa-star(aria-hidden='true')
+               i.fa.fa-star(aria-hidden='true')
+               i.fa.fa-star(aria-hidden='true')
+               i.fa.fa-star(aria-hidden='true')
+               i.fa.fa-star(aria-hidden='true')
         // ====== PACKAGE SHARE ==========
         .tour_right.head_right.tour_social.tour-ri-com
           h3 Share This Package
