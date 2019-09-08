@@ -1,8 +1,12 @@
-include  ../../commons/upperBanner
+include  ../../commons/distBanner
+include  ../../commons/cardMixin
++upperbar("bannerEgypt")
+include ../../commons/packFlag
 .container-fluid
     section#cont.container
         .row    
             .col-md-9
+     
                 #idTabs
                     div.active
                         a(href="#") Summmary 
@@ -31,7 +35,7 @@ include  ../../commons/upperBanner
                         a(href="#") Photos   
                 #leftContainerWrapper
                     #suma.tour_head1
-                        h3 summmary            
+                        h3 Tour Details            
                     #imageLeft
                         div(style="background-image: url('assets/img/foloImage/1.jpg');")        
                               h4 any data w 5lasasdasdasd asdasdasd asdasdasd aasdasd 
@@ -63,22 +67,29 @@ include  ../../commons/upperBanner
                 #leftContainerWrapper
                         #whatInc.tour_head1
                             #whatIncTable
+                                //- h4 Inclusions / Exclusion
                                 #included 
-                                    h4 Included    
+                                    div
+                                        p What's Included  :  
                                     ul 
-                                        li Food 
-                                        li Food 
-                                        li Food 
-                                        li Food 
-                                        li Food 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                
                                 #notIncluded
-                                    h4 Not Included    
+                                    p What's Not Included :
                                     ul 
-                                        li data     
-                                        li data     
-                                        li data     
-                                        li data     
-                                        li data     
+                                        li Lorem ipsum dolor sit amet,      
+                                        li Lorem ipsum dolor sit amet,      
+                                        li Lorem ipsum dolor sit amet,    
                 #leftContainerWrapper
                     #customize
                         h3 Did you know you can make this trip even better? 
@@ -109,4 +120,128 @@ include  ../../commons/upperBanner
                             #Dinner
                                 i.fa.fa-glass
                                 |  Dinner    
-            
+                #leftContainerWrapper
+                    #accomTag.tour_head1
+                        h3 Accomidations
+                        #accomLayers
+                            #acomlayer
+                                #location 
+                                    h5 Cairo 
+                                #accomi
+                                    h5 Sheraton Cosmo 
+                                #nights 
+                                    span 5 
+                                    h5 Nights         
+                            #acomlayer
+                                #location 
+                                    h5 Cairo 
+                                #accomi
+                                    h5 Sheraton Cosmo 
+                                #nights 
+                                    span 5 
+                                    h5 Nights         
+                #leftContainerWrapper
+                    .wrapper
+                        #pricesGoal.tabs
+                            input#tabone(type='radio' name='tabs' checked='checked')
+                            label(for='tabone')  
+                                i.fa.fa-eercast 
+                                | 	2-3 Persons
+                            .tab
+                              #priceTable
+                                table
+                                    tr
+                                        th Per Person
+                                        th Standard Hotel
+                                        th Deluxe Hotel  
+                                        th Elite Hotel  
+                                    tr 
+                                        td Double Room 
+                                        td 100$ 
+                                        td 540$
+                                        td 540$
+                                    tr 
+                                        td Single Supplement Room
+                                        td 5 Stars 
+                                        td 1240 $
+                                        td 1240 $
+ 
+
+                            input#tabtwo(type='radio' name='tabs')
+                            label(for='tabtwo')
+                                 i.fa.fa-eercast 
+                                 | 	4-7 Persons
+                            .tab
+                                #priceTable
+                                    table
+                                        tr
+                                            th Per Person
+                                            th Standard Hotel
+                                            th Deluxe Hotel  
+                                            th Elite Hotel  
+                                        tr 
+                                            td Double Room 
+                                            td 100$ 
+                                            td 540$
+                                            td 540$
+                                        tr 
+                                            td Single Supplement Room
+                                            td 50 $  
+                                            td 1240 $
+                                            td 1240 $
+                            input#tabthree(type='radio' name='tabs')
+                            label(for='tabthree')
+                                 i.fa.fa-eercast 
+                                 | 	7-10 Persons
+                            .tab
+                                #priceTable
+                                    table
+                                        tr
+                                            th Per Person
+                                            th Standard Hotel
+                                            th Deluxe Hotel  
+                                            th Elite Hotel  
+                                        tr 
+                                            td Double Room 
+                                            td 100$ 
+                                            td 540$
+                                            td 540$
+                                        tr 
+                                            td Single Supplement Room
+                                            td 5 Stars 
+                                            td 1240 $
+                                            td 1240 $
+                            input#tabfour(type='radio' name='tabs')
+                            label(for='tabfour')
+                                 i.fa.fa-eercast 
+                                 | 	10+ Persons
+                            .tab
+                                #priceTable
+                                    table
+                                        tr
+                                            th Per Person
+                                            th Standard Hotel
+                                            th Deluxe Hotel  
+                                            th Elite Hotel  
+                                        tr 
+                                            td Double Room 
+                                            td 100$ 
+                                            td 540$
+                                            td 540$
+                                        tr 
+                                            td Single Supplement Room
+                                            td 5 Stars 
+                                            td 1240 $
+                                            td 1240 $
+ 
+            .col-md-3
+                #stick
+                    .right_price( style="margin-top:5rem; padding-top:2rem;")  
+                        .right_title(style="background:url('https://lh3.googleusercontent.com/--McVMfBzjnE/VVRSrN3O3LI/AAAAAAAADZw/5hgS2oBjjqY/Luxor-Temples%2Bof%2BKarnak-Great%2BHypostyle%2BHall-Ancient%2BThebes-M.jpg'); background-size:cover;")    
+                            h3 Starting From 
+                            h2 200 
+                                span $      
+                        ul
+                            li 
+                                button#openMod.link-btn Book Now              
+                                

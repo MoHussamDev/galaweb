@@ -61,16 +61,16 @@ var accomTag = new Waypoint.Inview({
 
     },
 })
-var accomTag = new Waypoint.Inview({
-    element: document.getElementById('album'),
-    entered: function () {
-        deleteAllActive();
-        addActive("#photos");
+// var accomTag = new Waypoint.Inview({
+//     element: document.getElementById('album'),
+//     entered: function () {
+//         deleteAllActive();
+//         addActive("#photos");
 
-    },
-})
+//     },
+// })
 var accomTag = new Waypoint.Inview({
-    element: document.getElementById('pricesTa'),
+    element: document.getElementById('pricesGoal'),
     entered: function () {
         deleteAllActive();
         addActive("#price");
@@ -96,18 +96,18 @@ var openMod = document.getElementById("openMod");
 var modal = document.getElementById("modal");
 var custrip = document.getElementById("custrip");
 var closeModal = document.getElementById("closeModal");
-openMod.addEventListener("click",function(){
+// openMod.addEventListener("click",function(){
   
-    TweenMax.to(modal, .3, { autoAlpha: 1 });
-    TweenMax.to(custrip, .4, { top:"50px",autoAlpha: 1 })
-})
-closeModal.addEventListener("click",function(){
-    TweenMax.to(custrip, .4, { top: "-50px", autoAlpha: 0 }) 
-    TweenMax.to(modal, .3, { autoAlpha: 0 });
-})  
-function make(){
-    TweenMax.to(modal, .3, { autoAlpha: 1 });
-    TweenMax.to(custrip, .4, { top:"50px",autoAlpha: 1 })
+//     TweenMax.to(modal, .3, { autoAlpha: 1 });
+//     TweenMax.to(custrip, .4, { top:"50px",autoAlpha: 1 })
+// })
+// closeModal.addEventListener("click",function(){
+//     TweenMax.to(custrip, .4, { top: "-50px", autoAlpha: 0 }) 
+//     TweenMax.to(modal, .3, { autoAlpha: 0 });
+// })  
+// function make(){
+//     TweenMax.to(modal, .3, { autoAlpha: 1 });
+//     TweenMax.to(custrip, .4, { top:"50px",autoAlpha: 1 })
 
-}
+// }
 
