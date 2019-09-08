@@ -6,6 +6,7 @@ include ../../commons/flag
     section#cont.container
         .row    
             .col-md-9
+     
                 #idTabs
                     div.active
                         a(href="#") Summmary 
@@ -66,17 +67,25 @@ include ../../commons/flag
                 #leftContainerWrapper
                         #whatInc.tour_head1
                             #whatIncTable
-                                h4 Inclusions / Exclusion
+                                //- h4 Inclusions / Exclusion
                                 #included 
                                     div
-                                        p Inclusions :  
+                                        p What's Included  :  
                                     ul 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
+                                        li Lorem ipsum dolor sit amet, 
                                         li Lorem ipsum dolor sit amet, 
                                         li Lorem ipsum dolor sit amet, 
                                         li Lorem ipsum dolor sit amet, 
                                 
                                 #notIncluded
-                                    p Exclusion :
+                                    p What's Not Included :
                                     ul 
                                         li Lorem ipsum dolor sit amet,      
                                         li Lorem ipsum dolor sit amet,      
@@ -133,16 +142,106 @@ include ../../commons/flag
                                     h5 Nights         
                 #leftContainerWrapper
                     .wrapper
-                        .tabs
+                        #pricesGoal.tabs
                             input#tabone(type='radio' name='tabs' checked='checked')
-                            label(for='tabone') Single Room 
+                            label(for='tabone')  
+                                i.fa.fa-eercast 
+                                | 	2-3 Persons
                             .tab
-                                h1 Tab One Content
-                                p
-                                | Lorem ipsum dolor 
+                              #priceTable
+                                table
+                                    tr
+                                        th Per Person
+                                        th Standard Hotel
+                                        th Deluxe Hotel  
+                                        th Elite Hotel  
+                                    tr 
+                                        td Double Room 
+                                        td 100$ 
+                                        td 540$
+                                        td 540$
+                                    tr 
+                                        td Single Supplement Room
+                                        td 5 Stars 
+                                        td 1240 $
+                                        td 1240 $
+ 
+
                             input#tabtwo(type='radio' name='tabs')
-                            label(for='tabtwo') Double Room
+                            label(for='tabtwo')
+                                 i.fa.fa-eercast 
+                                 | 	4-7 Persons
                             .tab
-                                h1 Tab Two Content
-                                p
-                                | Lorem ipsum dolor 
+                                #priceTable
+                                    table
+                                        tr
+                                            th Per Person
+                                            th Standard Hotel
+                                            th Deluxe Hotel  
+                                            th Elite Hotel  
+                                        tr 
+                                            td Double Room 
+                                            td 100$ 
+                                            td 540$
+                                            td 540$
+                                        tr 
+                                            td Single Supplement Room
+                                            td 50 $  
+                                            td 1240 $
+                                            td 1240 $
+                            input#tabthree(type='radio' name='tabs')
+                            label(for='tabthree')
+                                 i.fa.fa-eercast 
+                                 | 	7-10 Persons
+                            .tab
+                                #priceTable
+                                    table
+                                        tr
+                                            th Per Person
+                                            th Standard Hotel
+                                            th Deluxe Hotel  
+                                            th Elite Hotel  
+                                        tr 
+                                            td Double Room 
+                                            td 100$ 
+                                            td 540$
+                                            td 540$
+                                        tr 
+                                            td Single Supplement Room
+                                            td 5 Stars 
+                                            td 1240 $
+                                            td 1240 $
+                            input#tabfour(type='radio' name='tabs')
+                            label(for='tabfour')
+                                 i.fa.fa-eercast 
+                                 | 	10+ Persons
+                            .tab
+                                #priceTable
+                                    table
+                                        tr
+                                            th Per Person
+                                            th Standard Hotel
+                                            th Deluxe Hotel  
+                                            th Elite Hotel  
+                                        tr 
+                                            td Double Room 
+                                            td 100$ 
+                                            td 540$
+                                            td 540$
+                                        tr 
+                                            td Single Supplement Room
+                                            td 5 Stars 
+                                            td 1240 $
+                                            td 1240 $
+ 
+            .col-md-3
+                #stick
+                    .right_price( style="margin-top:5rem; padding-top:2rem;")  
+                        .right_title(style="background:url('https://lh3.googleusercontent.com/--McVMfBzjnE/VVRSrN3O3LI/AAAAAAAADZw/5hgS2oBjjqY/Luxor-Temples%2Bof%2BKarnak-Great%2BHypostyle%2BHall-Ancient%2BThebes-M.jpg'); background-size:cover;")    
+                            h3 Starting From 
+                            h2 200 
+                                span $      
+                        ul
+                            li 
+                                button#openMod.link-btn Book Now              
+                                

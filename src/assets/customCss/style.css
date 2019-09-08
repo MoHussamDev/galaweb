@@ -8081,6 +8081,7 @@ color: white;
 }
 #leftContainerWrapper #whatInc #whatIncTable #included{
     display: flex;
+    flex-direction:column;
     width:100%;
     align-items:flex-start;
     justify-content:center;
@@ -8089,13 +8090,17 @@ color: white;
 
 }
 #leftContainerWrapper #whatInc #whatIncTable #included div{
-width:50%;
+width:100%;
 display:flex;
 justify-content:flex-start;
+
+}
+#leftContainerWrapper #whatInc #whatIncTable #included p{
+    font-size:2rem;
 }
 #leftContainerWrapper #whatInc #whatIncTable #included ul{
 list-style: none;
-width:50%;
+width:100%;
 display:flex;
 justify-content:flex-start;
 flex-direction:column;
@@ -8104,7 +8109,7 @@ margin:0;
 padding:0;
 position:relative;
 }
-#leftContainerWrapper #whatInc #whatIncTable #included ul::before{
+/* #leftContainerWrapper #whatInc #whatIncTable #included ul::before{
 content:"";
 position:absolute;
 top:0;
@@ -8114,7 +8119,7 @@ height:100%;
 border-left:1px solid #ccc;
 
 
-}
+} */
 #leftContainerWrapper #whatInc #whatIncTable #included ul li{
     width:100%;
     display:flex;
@@ -8145,17 +8150,24 @@ content: "\f00c";
 }
 #leftContainerWrapper #whatInc #whatIncTable #notIncluded{
     display:flex;
+    flex-direction:column;
     
     
 }
 #leftContainerWrapper #whatInc #whatIncTable #notIncluded p {
     display:flex;
-    width:50%;
+    width:100%;
+    
+
+}
+#leftContainerWrapper #whatInc #whatIncTable #notIncluded div p {
+    font-size:2rem;
+    
 
 }
 #leftContainerWrapper #whatInc #whatIncTable #notIncluded ul{
 list-style: none;
-width:50%;
+width:100%;
 display:flex;
 justify-content:flex-start;
 flex-direction:column;
@@ -8164,7 +8176,7 @@ margin:0;
 padding:0;
 position:relative;
 }
-#leftContainerWrapper #whatInc #whatIncTable #notIncluded ul::before{
+/* #leftContainerWrapper #whatInc #whatIncTable #notIncluded ul::before{
     content:"";
     position:absolute;
     top:0;
@@ -8174,7 +8186,7 @@ position:relative;
     border-left:1px solid #ccc;
     
     
-    }
+    } */
 
 #leftContainerWrapper #whatInc #whatIncTable #notIncluded ul li{
     width:100%;
@@ -8721,16 +8733,15 @@ color: white;
    #leftContainerWrapper #whatInc #whatIncTable #included h4 {
        padding-left:5px;
        font-size:18px;
-   
+
        margin-bottom:1rem;
     }
    #leftContainerWrapper #whatInc #whatIncTable #included h4:before {
     content:"\f05a";
     font: normal normal normal 14px/1 FontAwesome;
-padding-right:1rem;
-color: #253d52;
-
-font-size:20px;
+    padding-right:1rem;
+    color: #253d52;
+    font-size:20px;
 }
 #leftContainerWrapper #whatInc #whatIncTable #notIncluded h4:before {
     content:"\f06a";
@@ -8883,7 +8894,7 @@ margin-bottom:0.2rem;
 
 #leftContainerWrapper .tabs {
     display: flex;
-    height:30rem;
+    height:auto;
 	flex-wrap: wrap;
 }
 
@@ -8895,13 +8906,18 @@ margin-bottom:0.2rem;
     cursor: pointer;
     font-size:1.7rem;
     color: black;
-  background: #FDA014;
-  transition: background ease 0.2s;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:500;
+    background: #FDA014;
+    transition: background ease 0.2s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:500;
+  
 }
+#leftContainerWrapper .tabs label i {
+    padding-right:1rem;
+}
+
 #leftContainerWrapper .tabs .tab {
   order: 99; 
   flex-grow: 1;
@@ -8909,7 +8925,37 @@ margin-bottom:0.2rem;
 	display: none;
   padding: 1rem;
   background: #fff;
+  height: 100%;
 }
+#leftContainerWrapper .tabs .tab  #priceTable {
+
+width:100%;
+height: 100%;
+
+}
+#leftContainerWrapper .tabs .tab  #priceTable th{
+
+    border:1px solid #dddddd;
+    text-align:center;
+    padding:8px;
+  
+
+}
+#leftContainerWrapper .tabs .tab  #priceTable tr:nth-child(even){
+
+    background-color:#f3f3f3;
+  
+
+}
+#leftContainerWrapper .tabs .tab  #priceTable td{
+
+    border:1px solid #dddddd;
+    text-align:center;
+    padding:8px;
+  
+
+}
+
 #leftContainerWrapper .tabs input[type="radio"] {
     display: none;
 
@@ -8921,5 +8967,5 @@ margin-bottom:0.2rem;
 	display: block;
 }
 #leftContainerWrapper .wrapper{
-    height:30rem;
+    height:auto;
 }
