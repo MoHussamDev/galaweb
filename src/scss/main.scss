@@ -163,7 +163,12 @@ section{
         padding:0;
         }
     #cutterData{
-        
+        #inData{
+            span{
+                padding-left:4rem;
+                color:$mainOra;
+            }
+        }
         display:flex;
         justify-content:space-between;
         align-items:center;
