@@ -241,7 +241,7 @@ include ../../commons/packFlag
                             h4 Enquire Now
                         form
                             .text-area
-                                label Fisrt Name*
+                                label First Name*
                                 input(type='text' name='firstname' )
                             .text-area
                                 label Last Name*
@@ -250,18 +250,20 @@ include ../../commons/packFlag
                                 label E-mail Address*
                                 input(type='email' name='firstname' )
                             .text-area
-                                label Select your Nationality*
-                                select 
-                                    option(value="1")  Sort by Price     
-                                    option(value="1")  Sort By Lowest Price     
-                                    option(value="1")  Sort By Heigst Price     
+                                label Enter your Nationality*
+                                input(type='email' name='firstname' )
+                                //- select 
+                                //-     option(value="1")  Sort by Price     
+                                //-     option(value="1")  Sort By Lowest Price     
+                                //-     option(value="1")  Sort By Heigst Price     
                             .form-inline
                                 label Mobile*
                                 .div
-                                    select.code 
-                                        option(value="1")  Country code  
-                                        option(value="1")  Sort By Lowest Price     
-                                        option(value="1")  Sort By Heigst Price     
+                                    input.code(type='email' name='firstname' )
+                                    //- select.code 
+                                    //-     option(value="1")  Country code  
+                                    //-     option(value="1")  Sort By Lowest Price     
+                                    //-     option(value="1")  Sort By Heigst Price     
                                     input.phone(type='text' placeholder='phone number' )
                             .text-area
                                 label from*
@@ -321,9 +323,19 @@ include ../../commons/packFlag
                                     input#moins(type='button' value='-' onclick='minus()')
                                     input#count(type='text' size='25' value='0' )
                                     input#plus(type='button' value='+' onclick='plus()')
+                            .cheakbox-area
+                                .form-cheakbox.custom-control.custom-checkbox.mb-3
+                                    input#customCheck.custom-control-input(type='checkbox' name='example1')
+                                    label.custom-control-label(for='customCheck')  Add flight offer to vacation packages
+                                input(type='text' name='firstname' )
                             .text-area
-                                input.cheakbox(type='checkbox' name='vehicle1' value='Bike')
-                                |  I have a bike
-                            input(type='submit' value='Submit' style="width:90%")
+                                //- input.discription-text(type='text' name='firstname' placeholder='type your text here' )
+                                textarea.discription-text(rows='5' cols='50' placeholder="place your text here...") 
+                            .cheakbox-area
+                                .form-cheakbox.custom-control.custom-checkbox.mb-3
+                                    input#customCheck1.custom-control-input(type='checkbox' name='example2')
+                                    label.custom-control-label(for='customCheck1')   I agree to the  Terms and Conditions
+                            .confirm-buttom
+                                input(type='submit' value='Send Booking Inquiry')
                         
 

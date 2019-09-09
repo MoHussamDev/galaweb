@@ -7,8 +7,8 @@ width:35rem;
     background-color: #fbfbfb;
     padding: 0px 2rem;
     padding-top: 2rem;
-transform:scale(0.8);   
-    top:0rem;
+// transform:scale(0.8);   
+    top:9.8rem;
     .form-header{
         text-align: center;
     }
@@ -41,6 +41,11 @@ transform:scale(0.8);
                 padding: 5px 10px;
                 height: 3.5rem;
             }
+            .discription-text{
+                height:auto !important;
+                margin-top: 2rem;
+                background: white;
+            }
             .cheakbox {
                 left:0px !important;
                 padding-right: 1rem;
@@ -48,6 +53,7 @@ transform:scale(0.8);
                 position:static !important;
             }
         }
+        
         .form-inline{
             label{
                 padding-top: 1rem;
@@ -97,20 +103,83 @@ transform:scale(0.8);
             .inputs{
                 display: flex;
                 justify-content: space-between;
-                width: 50%;
+                width: 38%;
                 #moins{
-                    height: 25px;
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 5px;
+                    border: 1px solid #fDA014 !important;
+                    background: white;
+                    font-weight: 500;
                 }
                 #count{
                     height: 25px;
                     width: 10%;
+                    background: transparent;
+                    border: 0;
+                    font-size: 14px !important;
     
                 }
                 #plus{
-                    height: 25px;
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 5px;
+                    border: 1px solid #fDA014 !important;
+                    background: white;
+                    font-weight: 500;
                 }
             }
             
+        }
+        .cheakbox-area{
+            display:flex;
+            flex-direction: column;
+            .form-cheakbox{
+                padding-top: 2rem   ;
+
+                display:flex;
+                label{
+                    // padding-top: 1rem;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                    color: #000;
+                    font-weight: bold;
+                }
+                input{
+                    border-radius: 3px;
+                    box-shadow: 0 1px 4px 0 rgba(212,212,212,0.5);
+                    border: solid 1px #ebebeb;
+                    background-color: #fff;
+                    padding: 5px 10px;
+                    height: 3.5rem;
+                }
+            }
+                    input{
+                        border-radius: 3px;
+                        box-shadow: 0 1px 4px 0 rgba(212,212,212,0.5);
+                        border: solid 1px #ebebeb;
+                        background-color: #fff;
+                        padding: 5px 10px;
+                        height: 3.5rem;
+                    }
+        }
+        .confirm-buttom{
+            display:flex;
+            justify-content: center;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            input{
+                height:50px !important;
+                width:80% !important;
+                background:$mainOra ;
+                font-size: 16px !important;
+                font-weight: 600;
+                color:white
+            
+            }
+            input:hover{
+                background:$hoveSidBlueDark;
+            }
         }
     }
 }
