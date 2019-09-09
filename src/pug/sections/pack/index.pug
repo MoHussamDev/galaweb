@@ -64,35 +64,65 @@ include ../../commons/packFlag
                                 h4 
                                   span Day : 3
                                   | Anywhere 
-                #leftContainerWrapper
-                        #whatInc.tour_head1
-                            #whatIncTable
-                                //- h4 Inclusions / Exclusion
-                                #included 
-                                    div
-                                        p What's Included  :  
-                                    ul 
-                                        li Lorem ipsum dolor sit amet, 
-                                        li Lorem ipsum dolor sit amet, 
-                                        li Lorem ipsum dolor sit amet, 
-                                        li Lorem ipsum dolor sit amet, 
-                                        li Lorem ipsum dolor sit amet, 
-                                        li Lorem ipsum dolor sit amet, 
-                                        li Lorem ipsum dolor sit amet, 
-                                        li Lorem ipsum dolor sit amet, 
-                                        li Lorem ipsum dolor sit amet, 
-                                        li Lorem ipsum dolor sit amet, 
-                                        li Lorem ipsum dolor sit amet, 
+                
+                
+                
+                #leftContainerWrapper.acora
+                      ul#whatInc.theAccor.nav.nav-stacked
+                                    li.panel
+                                        a(data-toggle='collapse', data-parent='#whatInc' ,aria-expanded="true", href='#firstLink2') What's Included ?
+                                            ul#firstLink2.collapse.in(aria-expanded="true")
+                                                li 
+                                                     #included 
+                                                            ul 
+                                                                li Lorem ipsum dolor sit amet, 
+                                                                li Lorem ipsum dolor sit amet, 
+                                                              
+                                                                        
+                #leftContainerWrapper.acora
+                      ul#whatInc2.theAccor.nav.nav-stacked
+                                    li.panel
+                                        a(data-toggle='collapse' data-parent='#whatInc2' href='#firstLink') What's Not Included ?
+                                            ul#firstLink.collapse
+                                                li 
+                                                     #included 
+                                                            ul 
+                                                                li Lorem ipsum dolor sit amet, 
+                                                                li Lorem ipsum dolor sit amet, 
+                                                              
+                                                                        
+
+                //- #leftContainerWrapper
+                //-         #whatInc.tour_head1
+                //-             #whatIncTable
+                //-                 //- h4 Inclusions / Exclusion
+                //-                 #included 
+
+                //-                     div
+                //-                         p What's Included  :  
+                //-                     ul 
+                //-                         li Lorem ipsum dolor sit amet, 
+                //-                         li Lorem ipsum dolor sit amet, 
+                //-                         li Lorem ipsum dolor sit amet, 
+                //-                         li Lorem ipsum dolor sit amet, 
+                //-                         li Lorem ipsum dolor sit amet, 
+                //-                         li Lorem ipsum dolor sit amet, 
+                //-                         li Lorem ipsum dolor sit amet, 
+                //-                         li Lorem ipsum dolor sit amet, 
+                //-                         li Lorem ipsum dolor sit amet, 
+                //-                         li Lorem ipsum dolor sit amet, 
+                //-                         li Lorem ipsum dolor sit amet, 
                                 
-                                #notIncluded
-                                    p What's Not Included :
-                                    ul 
-                                        li Lorem ipsum dolor sit amet,      
-                                        li Lorem ipsum dolor sit amet,      
-                                        li Lorem ipsum dolor sit amet,    
-                #leftContainerWrapper
+                //-                 #notIncluded
+                //-                     p What's Not Included :
+                //-                     ul 
+                //-                         li Lorem ipsum dolor sit amet,      
+                //-                         li Lorem ipsum dolor sit amet,      
+                //-                         li Lorem ipsum dolor sit amet,    
+                #leftContainerWrapper.withBack
                     #customize
-                        h3 Did you know you can make this trip even better? 
+                        span Did you know you can make this trip even better? 
+                        p With Galaxia You Can Customize Your Tour To What You Prefer If Our Tour Didn't suit You     
                         button(onclick="make()")  Customize This Tour
                 #daysEntered
                     #leftContainerWrapper
