@@ -81,9 +81,9 @@
      -ms-transition: all 0.5s ease;
      -o-transition: all 0.5s ease;
 }
- .com-colo-abou p, li {
+ /* .com-colo-abou p, li {
      color: #888;
-}
+} */
  .inn-page-bg {
      position: relative;
      overflow: hidden;
@@ -7945,7 +7945,7 @@ justify-content: space-between;
 #leftContainerWrapper  .d-info-pack-days  ul li i {
     width: 25px;
     height: 25px;
-    background: #3477B7;
+    background: #F78F1E;
     border-radius: 50%;
     text-align: center;
     margin-left: -35px;
@@ -7957,7 +7957,7 @@ justify-content: space-between;
     display:flex;
     align-items:center;
     justify-content:center;
-    transform:scale(0.8);
+    transform:scale(0.6);
   
     
 }
@@ -8940,11 +8940,11 @@ flex-wrap: wrap;
 order: 1; 
 display: block;
 padding: 2rem 3rem;
-margin-right: 0.2rem;
+margin-right: -1.2rem;
 cursor: pointer;
 font-size:1.7rem;
 color: black;
-background: #FDA014;
+background: #dddddd;
 transition: background ease 0.2s;
 display:flex;
 align-items:center;
@@ -8954,6 +8954,7 @@ font-weight:500;
 }
 #leftContainerWrapper .tabs label i {
 padding-right:1rem;
+color:#FDA014;
 }
 
 #leftContainerWrapper .tabs .tab {
@@ -8961,7 +8962,7 @@ order: 99;
 flex-grow: 1;
 width: 100%;
 display: none;
-padding: 1rem;
+/* padding: 1rem; */
 background: #fff;
 height: 100%;
 }
