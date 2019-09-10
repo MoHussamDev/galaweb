@@ -153,6 +153,110 @@ section{
     }
 }
 
+#buuter{
+    padding-top:1rem !important;
+    background-color: $whiteDark;
+    box-shadow:$bannerShadow;
+    height: 15rem;
+    display:flex;
+    align-items:center;  
+    .container{
+        padding:0;
+        }
+        #buuterData{
+            
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            height:15rem;
+            position:relative;
+            #inData{
+                display:flex;
+                flex-direction:column;
+               justify-content:center;
+                height: 15rem;
+                h1{
+                    margin:0;
+                    padding:0;
+                    padding-left:4rem;
+                    font-weight:600;
+                    color: $sidBlu;
+                    &:before{
+                        content:'';
+                        background:url('../img/iconz/galaxiaTours.svg');
+                        background-size:cover;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                       
+                        left:-1rem;
+                        padding:2rem;
+                    }
+                }
+                #downData{
+                    font-weight:500;
+                    padding-left:1rem;
+                    transform:scale(0.8);
+                    .location{
+                        font-weight:inherit;
+                        color:$mainOra; 
+                        &:before{
+                            content:'\f041';
+                            font: normal normal normal 14px/1 FontAwesome;
+                            padding-right:1rem;
+                            color:$sidBlu;
+                        }
+                        
+                    }
+                    .tourType{
+                        font-weight:inherit;
+                        text-transform: capitalize;
+                        color:$mainOra;                    
+                        &:before{
+                            content:'|';
+                            padding-Right:1rem; 
+                            color:$sidBlu;    
+                        }
+                        &:after{
+                            content:"|";
+                            color:$sidBlu;      
+                        }
+                    }
+                    .duration{
+                        font-weight:inherit;
+                        color:$mainOra; 
+                        &:before{
+                            content:"\f017";
+                            font: normal normal normal 14px/1 FontAwesome;
+                            padding-right:1rem;
+                            padding-left:1rem;
+                            color:$sidBlu;
+                        
+                        }
+                    }
+                }
+            }
+         
+            #divbtn   {
+                    height:15rem;
+                    display:flex;
+                    align-items:center;
+                button{
+                    background-color: $mainOra;
+                    border:0;
+                    width:15rem;
+                    height:4rem;
+                    color:white;
+                    font-weight:500;
+                    font-size:1.2rem;
+                    transform:scale(0.9);
+                    
+                }
+            }
+    
+        }     
+        
+}
+
 #cuuter{
     padding-top:1rem !important;
     background-color: $whiteDark;
@@ -170,7 +274,8 @@ section{
             }
             #downData{
                 font-weight:500;
-                padding-left:4rem;
+                padding-left:1rem;
+                transform:scale(0.8);
                 .location{
                     font-weight:inherit;
                     color:$mainOra; 
@@ -581,7 +686,7 @@ section{
             font-weight:500;
             padding-left:3rem;
             height:100%;
-            color:#7f7f7f;
+            color:#005187;
             font-family: 'Montserrat', sans-serif;
             &:before{
                 content: "\f0fe";
