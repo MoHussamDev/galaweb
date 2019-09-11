@@ -35,7 +35,7 @@ include ../../commons/packFlag
                         a(href="#") Photos   
                 #leftContainerWrapper
                     #suma.tour_head1
-                        h3 Tour Details            
+                        h3.summmary Tour Details            
                     #imageLeft
                         div(style="background-image: url('assets/img/foloImage/1.jpg');")        
                               h4 any data w 5lasasdasdasd asdasdasd asdasdasd aasdasd 
@@ -47,7 +47,7 @@ include ../../commons/packFlag
                               h4 any data w 5lasasdasdasd asdasdasd asdasdasd aasdasd 
                     #parag Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim commodi culpa veniam inventore non labore nostrum voluptates asperiores qui rem! Corporis nam deleniti dolorem voluptatibus error et doloribus maiores mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim commodi culpa veniam inventore non labore nostrum voluptates asperiores qui rem! Corporis nam deleniti dolorem voluptatibus error et doloribus maiores mollitia. 
                     .tour_head1.d-info-pack-days.days    
-                        h3 Detailed Day Wise Itinerary
+                        h3.itenary Detailed Itinerary
                         ul
                             li.d-info-pack-days 
                                 i.fa.fa-clock-o 
@@ -85,7 +85,7 @@ include ../../commons/packFlag
                                         a(data-toggle='collapse' data-parent='#whatInc2' href='#firstLink') What's Not Included ?
                                             ul#firstLink.collapse
                                                 li 
-                                                     #included 
+                                                     #notIncluded 
                                                             ul 
                                                                 li Lorem ipsum dolor sit amet, 
                                                                 li Lorem ipsum dolor sit amet, 
@@ -119,12 +119,12 @@ include ../../commons/packFlag
                 //-                         li Lorem ipsum dolor sit amet,      
                 //-                         li Lorem ipsum dolor sit amet,      
                 //-                         li Lorem ipsum dolor sit amet,    
-                #leftContainerWrapper.withBack
-                    #customize
-                        span Did you know you can make this trip even better? 
-                        p With Galaxia You Can Customize Your Tour To What You Prefer If Our Tour Didn't suit You     
-                        button(onclick="make()")  Customize This Tour
-                #daysEntered
+                //- #leftContainerWrapper.withBack
+                //-     #customize
+                //-         span Did you know you can make this trip even better? 
+                //-         p With Galaxia You Can Customize Your Tour To What You Prefer If Our Tour Didn't suit You     
+                //-         button(onclick="make()")  Customize This Tour
+                #daysEntered(style="margin-top:3rem")
                     #leftContainerWrapper
                         #topHead
                             #day
@@ -152,7 +152,7 @@ include ../../commons/packFlag
                                 |  Dinner    
                 #leftContainerWrapper
                     #accomTag.tour_head1
-                        h3 Accomidations
+                        h3.acaca Accomidations
                         #accomLayers
                             #acomlayer
                                 #location 
@@ -268,7 +268,8 @@ include ../../commons/packFlag
                 #stick
                     #inquire-now
                         .form-header
-                            h4 Enquire Now
+                            h4 Enquire 
+                                span Now
                         form
                             .text-area
                                 label First Name*
@@ -301,34 +302,6 @@ include ../../commons/packFlag
                             .text-area
                                 label to*
                                 input(type='date' name='firstname' )
-                            //- .child-inline
-                            //-     .double-label
-                            //-         p.top No.&nbsp; of  Adults
-                            //-         P.down ( + 12 years )
-                            //-     .minus-squar
-                            //-         .btn -
-                            //-     .number
-                            //-         label 1
-                            //-     .plus-squar
-                            //-         .btn +
-                            //- .child-inline
-                            //-     .double-label
-                            //-         p.top No. of Children
-                            //-         P.down ( + 12 years )
-                            //-     .minus-squar
-                            //-         .btn -
-                            //-     .number
-                            //-         label 1
-                            //-     .plus-squar
-                            //-         .btn +
-                            //- input-group.plus-minus-input
-                            //-     .input-group-button
-                            //-         button.button.hollow.circle(type='button' data-quantity='minus' data-field='quantity')
-                            //-             i.fa.fa-minus(aria-hidden='true')
-                            //-         input.input-group-field(type='number' name='quantity' value='0')
-                            //-         .input-group-button
-                            //-              button.button.hollow.circle(type='button' data-quantity='plus' data-field='quantity')
-                            //-                 i.fa.fa-plus(aria-hidden='true')
                             .child-inline
                                 .double-label
                                     p.top No. of  Adults
@@ -367,5 +340,7 @@ include ../../commons/packFlag
                                     label.custom-control-label(for='customCheck1')   I agree to the  Terms and Conditions
                             .confirm-buttom
                                 input(type='submit' value='Send Booking Inquiry')
-                        
-                            script(src="")
+                    #customizeYourTrip 
+                        h2 Customize your 
+                        span trip now  
+                        a(href="#") Now
