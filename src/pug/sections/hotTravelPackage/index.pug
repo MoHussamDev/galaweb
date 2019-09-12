@@ -3,16 +3,16 @@ include partials/card
 section#hotTravelPackage.container-fluid
     .container
         +mii('Hot Travel','Packages','hottest Travel Package In The Middle East ')
-        .container
-                .CardContainerGala
-                        .HotTravelPackagesCards
-                                .swiper-wrappers.container
-                                        .swiper-slidef 
-                                                +packageCard('Cairo And Xmas Cruise','Egypt',"500$","tour1")
-                                        .swiper-slidef 
-                                                +packageCard('Egypt Beaches In summer','Egypt',"500$","tour2")
-                                        
-                                        .swiper-slidef 
-                                                +packageCard("Egypt's Winter Warm sun ",'Egypt',"500$","tour3")
-                                        .swiper-slidef 
-                                                +packageCard('Sinai Diving Tour','Egypt',"500$","tour4")
+        
+        .CardContainerGala
+                .HotTravelPackagesCards
+                        .swiper-wrappers
+                                .swiper-slidef 
+                                        +packageCard('Cairo And Xmas Cruise','Egypt',"500$","tour1")
+                                .swiper-slidef 
+                                        +packageCard('Egypt Beaches In summer','Egypt',"500$","tour2")
+                                
+                                .swiper-slidef 
+                                        +packageCard("Egypt's Winter Warm sun ",'Egypt',"500$","tour3")
+                                .swiper-slidef 
+                                        +packageCard('Sinai Diving Tour','Egypt',"500$","tour4")

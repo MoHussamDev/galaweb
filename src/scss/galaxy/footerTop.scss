@@ -1,14 +1,14 @@
 #footerTop{
     display:flex;
     flex-direction:column;
-    height:40rem;
+    height:25rem;
     justify-content:flex-end;
     @include mq('phone'){
         display:none;
     }   
     .lowerGala{
         background-color: orange;
-        height: 30%;
+        height: 48%;
             .dataIn{
                 display:flex;
 

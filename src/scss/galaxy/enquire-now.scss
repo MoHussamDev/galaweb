@@ -4,7 +4,7 @@ width:35rem;
     // transform: scale(0.9);
     box-shadow: 0 2px 7px 0 rgba(155,155,155,0.5);
     position: relative;
-    background-color: #fbfbfb;
+    background-color: white;
     padding: 0px 2rem;
     padding-top: 2rem;
 transform:scale(0.8);   
@@ -201,4 +201,66 @@ transform:scale(0.8);
     }
 }
                        
+}
+
+#myCarousel1{
+    margin-bottom:4rem;
+}
+
+#simmilarListingGala{
+    position:relative;
+    top:-20rem;
+    height:auto;
+    width:35rem;
+    padding:2rem;
+    padding-top:4rem;
+    transform: scale(0.8);
+    background-color: white;
+    .listingGalaHead{
+        height:5rem;
+        h3{
+            margin:0;
+            padding:0;
+            font-weight:500;
+        }
+    }
+                            
+    .itemGalaListing{
+        padding-bottom:2rem;
+        border-bottom:1px solid #f9f9f9;
+    text-decoration:none;
+        display:flex;
+        margin-bottom:1rem;
+        #imgItemGalaListing{
+            width:30%;
+            height:8rem;
+            img{
+                width:100%;
+                height: 100%;
+            }
+        }
+        #linksandDataItemGalaListing{
+            width:70%;
+            display:flex;
+            flex-direction:column;
+           justify-content:center;
+           padding-left:2rem;
+            h4{
+                margin:0;
+                padding:0;
+                color:black;
+                font-weight:500;
+            }
+            h6{
+                color:$mainOra;
+                margin:0;
+                padding:0;
+                font-size:1.9rem;
+                span{
+                    color: black;
+                    padding-left:1rem;
+                }
+            }
+        }
+    }
 }
