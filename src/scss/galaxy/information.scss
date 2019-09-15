@@ -2,6 +2,18 @@
     background:white;
     margin-top: 3rem;
     .info-header{
+        hr{
+            // background: $mainOra !important;
+            // color:$mainOra !important;
+            // height: 1px;
+            // border: none;
+            margin-top: 1rem !important;
+            height: 2px;
+            
+        }
+        h2{
+            color:$mainOra !important;
+        }
         .subtitle{
             color:#747272;
         }
