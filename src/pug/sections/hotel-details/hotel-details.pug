@@ -1,7 +1,7 @@
 include  ../../commons/distBanner
 include  ../../commons/packageCard
 +upperbar("bannerEgypt")
-include ../../commons/flag
+include ../../commons/bag
 // ====== TOUR DETAILS - BOOKING ==========
 //- section(style="padding-top:0 !important;")
   #inner-page-title.rows.banner_book
@@ -14,222 +14,82 @@ include ../../commons/flag
           li.dl4
             a(href='booking.html') Book Now
 // ====== TOUR DETAILS ==========
-section
-  .rows.inn-page-bg.com-colo
-    .container.inn-page-con-bg
-      .col-md-9
-        // ====== TOUR TITLE ==========
-        //- .tour_head
-        //-   h2
-        //-     | Universal luxury Grand Hotel 
-        //-     span.tour_star
-        //-       i.fa.fa-star(aria-hidden='true')
-        //-       i.fa.fa-star(aria-hidden='true')
-        //-       i.fa.fa-star(aria-hidden='true')
-        //-       i.fa.fa-star(aria-hidden='true')
-        //-       i.fa.fa-star-half-o(aria-hidden='true')
-        //-     span.tour_rat 4.5
-        // ====== TOUR DESCRIPTION ==========
-        .tour_head1.hotel-com-color
-          h3 Old Palace Resort
-          p
-            | Welcome to the OLD PALACE RESORT—Sahl Hasheesh—RED SEA, Egypt where the sum of All what we have to offer will sure add up to a unique experience and memorable times for you to cherish. We have you in mind in everything we do!
-          p
-            | Brazil&rsquo;s view takes you through clouds of mist and the opportunity to see these 275 falls, spanning nearly two miles! Argentina&rsquo;s side allows you to walk along the boardwalk network and embark on a jungle train through the forest for unforgettable views. Hear the deafening roar and admire the brilliant rainbows created by the clouds of spray, and take in the majesty of this wonder of the world. From vibrant cities to scenic beauty, this vacation to Rio de Janeiro, Iguassu Falls, and Buenos Aires will leave you with vacation memories you&rsquo;ll cherish for life.
-        // ====== AMENITIES ==========
-        .tour_head1.hot-ameni
-          h3 Hotel Amenities
-          ul
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Airport transportation (surcharge)
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Number of floors - 9
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Coffee shop or caf&eacute;
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Dry cleaning/laundry service
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Health club
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Billiards or pool table
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Total number of rooms - 108
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Bar/lounge
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Air Conditioner
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Mini Bar (with liquor)
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Separate Bedroom
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Living Room Space
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Smoking Rooms Available
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Internet
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Transport to / from Hotel
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Concierge
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Rental Car Service Desk On Site
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Room Service
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Beauty Salon
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Business Centre
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Fitness Centre
-            li
-              i.fa.fa-check(aria-hidden='true')
-              |  Spa and Pool
-        // ====== ROOMS: HOTEL BOOKING ==========
-        .tour_head1.hotel-book-room
-          h3 Photo Gallery
-          #myCarousel1.carousel.slide(data-ride='carousel')
-            // Indicators
-            ol.carousel-indicators.carousel-indicators-1
-              li(data-target='#myCarousel1' data-slide-to='0')
-                img(src="assets/img/hotel model/Chalet3.jpg" alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='1')
-                img(src='assets/img/hotel model/Chalet4.jpg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='2')
-                img(src='assets/img/gallery/s3.jpeg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='3')
-                img(src='assets/img/gallery/s4.jpeg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='4')
-                img(src='assets/img/gallery/s5.jpeg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='5')
-                img(src='assets/img/gallery/s6.jpeg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='6')
-                img(src='assets/img/gallery/s7.jpeg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='7')
-                img(src='assets/img/gallery/s8.jpg' alt='Chania')
-              li(data-target='#myCarousel1' data-slide-to='8')
-                img(src='assets/img/gallery/s9.jpg' alt='Chania')
-            // Wrapper for slides
-            .carousel-inner.carousel-inner1(role='listbox')
-              .item.active
-                img(src='assets/img/hotel model/Chalet3.jpg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s2.jpeg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s3.jpeg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s4.jpeg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s5.jpeg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s6.jpeg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s7.jpeg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s8.jpg' alt='Chania' width='460' height='345')
-              .item
-                img(src='assets/img/gallery/s9.jpg' alt='Chania' width='460' height='345')
-            // Left and right controls
-            a.left.carousel-control(href='#myCarousel1' role='button' data-slide='prev')
-              span
-                i.fa.fa-angle-left.hotel-gal-arr(aria-hidden='true')
-            a.right.carousel-control(href='#myCarousel1' role='button' data-slide='next')
-              span
-                i.fa.fa-angle-right.hotel-gal-arr.hotel-gal-arr1(aria-hidden='true')
-        // ====== ABOUT THE TOUR ==========
-        
-        // ====== HOTEL ROOM TYPES ==========
-        
-        
-        // ====== TOUR LOCATION ==========
-        
-     
-      .col-md-3.tour_r
-        // ====== SPECIAL OFFERS ==========
-        
-          .band1
-            img(src='images/offer.png' alt='')
-          p Special Offer
-          h4
-            | $500
-            span.n-td
-              span.n-td-1 $800
-          a.link-btn(href='booking.html') Book Now
-        // ====== TRIP INFORMATION ==========
-        .tour_right.tour_incl.tour-ri-com
-          h3 Trip Information
-          ul
-            li Hotel Name : Rio,Brazil
-            //- li Hotel Stars : span.tour_star 
-            li Location : Rio,Brazil 
-            li Hotel Stars : 
-             span.tour_star
-               i.fa.fa-star(aria-hidden='true')
-               i.fa.fa-star(aria-hidden='true')
-               i.fa.fa-star(aria-hidden='true')
-               i.fa.fa-star(aria-hidden='true')
-               i.fa.fa-star(aria-hidden='true')
-        // ====== PACKAGE SHARE ==========
-        .tour_right.head_right.tour_social.tour-ri-com
-          h3 Share This Package
-          ul
-            li
-              a(href='#')
-                i.fa.fa-facebook(aria-hidden='true')
-            li
-              a(href='#')
-                i.fa.fa-google-plus(aria-hidden='true')
-            li
-              a(href='#')
-                i.fa.fa-twitter(aria-hidden='true')
-            li
-              a(href='#')
-                i.fa.fa-linkedin(aria-hidden='true')
-            li
-              a(href='#')
-                i.fa.fa-whatsapp(aria-hidden='true')
-        
-        
-        // ====== PUPULAR TOUR PACKAGES ==========
-        .tour_right.tour_rela.tour-ri-com
-          h3 Popular Packages
-          .tour_rela_1
-            img(src='images/related1.png' alt='')
-            h4 Dubai 7Days / 6Nights
-            p
-              | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text
-            a.link-btn(href='#') View this Package
-          .tour_rela_1
-            img(src='images/related2.png' alt='')
-            h4 Mauritius 4Days / 3Nights
-            p
-              | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text
-            a.link-btn(href='#') View this Package
-          .tour_rela_1
-            img(src='images/related3.png' alt='')
-            h4 India 14Days / 13Nights
-            p
-              | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text
-            a.link-btn(href='#') View this Package
-// ====== TIPS BEFORE TRAVEL ==========
+section#hotelImagesGallery.container-fluid 
+      .container
+        .row
+          .col-md-8 
+             #leftContainerWrapper
+                .tour_head1.hotel-book-room
+                    h3.pictureGala Photo Gallery
+                    #myCarousel1.carousel.slide(data-ride='carousel')
+                      // Indicators
+                      ol.carousel-indicators.carousel-indicators-1
+                        li(data-target='#myCarousel1' data-slide-to='0')
+                          img(src="assets/img/gallery/s3.jpeg" alt='Chania')
+                        li(data-target='#myCarousel1' data-slide-to='1')
+                          img(src='assets/img/gallery/s3.jpeg' alt='Chania')
+                        li(data-target='#myCarousel1' data-slide-to='2')
+                          img(src='assets/img/gallery/s3.jpeg' alt='Chania')
+                        li(data-target='#myCarousel1' data-slide-to='3')
+                          img(src='assets/img/gallery/s4.jpeg' alt='Chania')
+                        li(data-target='#myCarousel1' data-slide-to='4')
+                          img(src='assets/img/gallery/s5.jpeg' alt='Chania')
+                        li(data-target='#myCarousel1' data-slide-to='5')
+                          img(src='assets/img/gallery/s6.jpeg' alt='Chania')
+                        li(data-target='#myCarousel1' data-slide-to='6')
+                          img(src='assets/img/gallery/s7.jpeg' alt='Chania')
+                        li(data-target='#myCarousel1' data-slide-to='7')
+                          img(src='assets/img/gallery/s8.jpg' alt='Chania')
+                        li(data-target='#myCarousel1' data-slide-to='8')
+                          img(src='assets/img/gallery/s9.jpg' alt='Chania')
+                      // Wrapper for slides
+                      .carousel-inner.carousel-inner1(role='listbox')
+                        .item.active
+                          img(src='assets/img/gallery/s2.jpeg' alt='Chania' width='460' height='345')
+                        .item
+                          img(src='assets/img/gallery/s2.jpeg' alt='Chania' width='460' height='345')
+                        .item
+                          img(src='assets/img/gallery/s3.jpeg' alt='Chania' width='460' height='345')
+                        .item
+                          img(src='assets/img/gallery/s4.jpeg' alt='Chania' width='460' height='345')
+                        .item
+                          img(src='assets/img/gallery/s5.jpeg' alt='Chania' width='460' height='345')
+                        .item
+                          img(src='assets/img/gallery/s6.jpeg' alt='Chania' width='460' height='345')
+                        .item
+                          img(src='assets/img/gallery/s7.jpeg' alt='Chania' width='460' height='345')
+                        .item
+                          img(src='assets/img/gallery/s8.jpg' alt='Chania' width='460' height='345')
+                        .item
+                          img(src='assets/img/gallery/s9.jpg' alt='Chania' width='460' height='345')
+                      // Left and right controls
+                      a.left.carousel-control(href='#myCarousel1' role='button' data-slide='prev')
+                        span
+                          i.fa.fa-angle-left.hotel-gal-arr(aria-hidden='true')
+                      a.right.carousel-control(href='#myCarousel1' role='button' data-slide='next')
+                        span
+                          i.fa.fa-angle-right.hotel-gal-arr.hotel-gal-arr1(aria-hidden='true')
+          #rightHotelAny.col-md-4
+               #rightcontWrapperGala.tour_right.tour_incl.tour-ri-com
+                    .rightcontWrapperGalaHeader 
+                        span.tour_star
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+
+                    .rightcontWrapperGalaNos
+                        h4 Trip Information
+                    .rightcontWrapperGaladown    
+                        h data 
+                  
+                    //-   li Hotel Name : Rio,Brazil
+                    //-   li Location : Rio,Brazil 
+                    //-   li Hotel Stars : 
+                    //-     span.tour_star
+                    //-       i.fa.fa-star(aria-hidden='true')
+                    //-       i.fa.fa-star(aria-hidden='true')
+                    //-       i.fa.fa-star(aria-hidden='true')
+                    //-       i.fa.fa-star(aria-hidden='true')
+                    //-       i.fa.fa-star(aria-hidden='true')
